@@ -1,0 +1,216 @@
+{
+  "main": {
+    "id": "61fb6a75c513ba3e",
+    "type": "split",
+    "children": [
+      {
+        "id": "5aa1c7201288533b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d5b7b5dfaa6bf8a4",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "28dc0d0ab08ce607",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SorceGit Guide.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SorceGit Guide"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d10cc1098097ad3a",
+    "type": "split",
+    "children": [
+      {
+        "id": "1592b02d25f1f262",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7775a0b3cd425b20",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "7c0571e05cbebc94",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "e6efcd85fbdde306",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9005153342ad14b9",
+    "type": "split",
+    "children": [
+      {
+        "id": "8e18a385c04d6429",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fff041c2df28ff93",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "dc92264e6629a778",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "37bd43abc63c0191",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "7fc1daa317758271",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "SorceGit Guide.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of SorceGit Guide"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "28dc0d0ab08ce607",
+  "lastOpenFiles": [
+    "Rules & Guides.md",
+    "SorceGit Guide.md",
+    "Game Design Document.md",
+    "Jammer Registry.md",
+    "Task Board.md",
+    "Personal Spaces/Horizon's WhiteBoard.canvas",
+    "Personal Spaces/Horizon's Personal Note.md",
+    "Personal Spaces/Ginger's WhiteBoard.canvas",
+    "Personal Spaces/Ginger's Personal Note.md",
+    "Art/Graphics Guide.canvas",
+    "Personal Spaces/Miles's WhiteBoard.canvas",
+    "Personal Spaces/Miles's Personal Note.md",
+    "Personal Spaces/Kiti's WhiteBoard.canvas",
+    "Personal Spaces/Kiti's Personal Note.md",
+    "Image Bin/Texturing 0005.jpg",
+    "Image Bin/Texturing 0001.jpeg",
+    "Image Bin/Texturing 0004.jpeg",
+    "Image Bin/Texturing 0003.jpeg",
+    "Image Bin/Texturing 0002.jpeg",
+    "7e54d2d9a2dd485a91aa0697f2dbbd3c.jpeg",
+    "f1d0317606d04608877ab96f5b91e182.jpeg",
+    "Image Bin/Geometry 0006.jpg",
+    "Image Bin/Geometry 0005.jpg",
+    "Image Bin/Geometry 0001.jpg",
+    "Image Bin",
+    "Art",
+    "Untitled.base",
+    "Personal Spaces",
+    "2025-10-08.md",
+    "eggs.md",
+    "Welcome.md"
+  ]
+}

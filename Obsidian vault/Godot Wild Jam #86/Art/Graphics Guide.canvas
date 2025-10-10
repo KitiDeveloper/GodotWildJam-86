@@ -1,0 +1,38 @@
+{
+	"nodes":[
+		{"id":"60db045467d66874","type":"group","x":-1000,"y":-680,"width":1200,"height":1034,"color":"1","label":"Geometry Ref"},
+		{"id":"6f3715f13b17d7cb","type":"group","x":-1000,"y":-1806,"width":920,"height":1052,"color":"5","label":"Texturing Ref"},
+		{"id":"44c52bbd39d693c9","type":"file","file":"Image Bin/Geometry 0003.jpg","x":-379,"y":-639,"width":560,"height":455,"color":"1"},
+		{"id":"a9896557a4f32a3f","type":"file","file":"Image Bin/Texturing 0001.jpeg","x":-979,"y":-1785,"width":420,"height":236,"color":"5"},
+		{"id":"68cd465699671d6b","type":"text","text":"Can more easily adapt a style across a project","x":-689,"y":-1469,"width":262,"height":84,"color":"5"},
+		{"id":"6422f50262d59789","type":"text","text":"Forces a comfy retro feel without limiting technology","x":-979,"y":-1469,"width":262,"height":84,"color":"5"},
+		{"id":"e706b8a8f89250f0","type":"file","file":"Image Bin/Texturing 0002.jpeg","x":-521,"y":-1785,"width":420,"height":236,"color":"5"},
+		{"id":"dcf793b6d3b3bf04","type":"text","text":"Low poly enough to not need Level of detail variations in engine","x":-634,"y":-639,"width":229,"height":93,"color":"1"},
+		{"id":"1c21435aeca5dc15","type":"file","file":"Image Bin/Geometry 0001.jpg","x":-979,"y":-639,"width":253,"height":292,"color":"1"},
+		{"id":"d1f67cd7bd7e2afa","type":"text","text":"Details stand out more clearly","x":-396,"y":-1469,"width":295,"height":84,"color":"5"},
+		{"id":"d6922ae57c80ebf0","type":"text","text":"Geometry that gives a strong silhouette","x":-603,"y":-308,"width":166,"height":93,"color":"1"},
+		{"id":"a8da9e08441bc64c","type":"text","text":"- **Mid-range PC / console vibe:** keep full scene ≤ **200k–400k tris visible** at once.\n    \n- **Web / jam / potato-safe:** ≤ **100k–150k tris visible**.  \n    That’s like hundreds of props if each stays under 500 tris.","x":-233,"y":148,"width":414,"height":186,"color":"1"},
+		{"id":"f8ed425319290955","type":"file","file":"Image Bin/Geometry 0006.jpg","x":-233,"y":-163,"width":414,"height":290,"color":"1"},
+		{"id":"bbfc8c5e868317f3","type":"file","file":"Godot Wild Jam #86/Image Bin/Texturing 0005.jpg","x":-979,"y":-1301,"width":420,"height":315,"color":"5"},
+		{"id":"b12673830fe7423d","type":"text","text":"Hero areas - Parts of the mesh have higher density polygons while other areas stay simple","x":-710,"y":-474,"width":273,"height":127,"color":"1"},
+		{"id":"a1313b574fe7b9e6","type":"file","file":"Image Bin/Geometry 0002.jpg","x":-979,"y":-308,"width":302,"height":503,"color":"1"},
+		{"id":"8a04455fd3930035","type":"text","text":"Target Tri Counts per Asset Type\nTiny props (cups, tools, cans, etc.) 100-300\nMedium props (furniture, foliage, etc.) 300-800\nLarge static props (cars, trees, etc) 800-2,000\nEnvironment chunks (walls, buildings, etc) 1-3k\nCharacters / creatures 2-4k\n“Hero” focal props (statues, centerpiece) 4-6k","x":-645,"y":127,"width":390,"height":207,"color":"1"},
+		{"id":"6d11024dd086bee8","type":"file","file":"Image Bin/Geometry 0004.jpg","x":-603,"y":-124,"width":284,"height":213,"color":"1"},
+		{"id":"c66320334d2bf86f","type":"text","text":"Low Poly creates charming timeless graphics","x":-979,"y":230,"width":302,"height":103,"color":"1"},
+		{"id":"184741c9ee8ab15e","type":"file","file":"Godot Wild Jam #86/Image Bin/Texturing 0004.jpeg","x":-521,"y":-1301,"width":420,"height":236,"color":"5"},
+		{"id":"8f88964bafcf51b4","type":"text","text":"Should keep textures sizes\n64x64 for small objects\n128x128 for medium objects\n256x256 for large objects\n512x512 for hero objects\nFreely combine textures into atlases","x":-979,"y":-943,"width":299,"height":168,"color":"5"},
+		{"id":"27d20a32e5ec5e1b","type":"text","text":"Index color range to avoid muddy transitions and unclear details","x":-660,"y":-943,"width":160,"height":168,"color":"5"},
+		{"id":"c478d3af4c26a334","type":"text","text":"Quicker to iterate and expand upon","x":-521,"y":-1049,"width":420,"height":63,"color":"5"},
+		{"id":"612ff19719a36bb7","type":"text","text":"Use only a diffuse, normal and roughness textures at most and only use alpha textures if absolutely necessary ","x":-480,"y":-943,"width":220,"height":168,"color":"5"},
+		{"id":"10103f2064f0a6c1","type":"text","text":"Paint on shadows and highlights into the diffuse ","x":-240,"y":-943,"width":139,"height":168,"color":"5"}
+	],
+	"edges":[
+		{"id":"8130989adafd8d77","fromNode":"b12673830fe7423d","fromSide":"right","toNode":"44c52bbd39d693c9","toSide":"left","color":"1"},
+		{"id":"f0540064815f76ac","fromNode":"dcf793b6d3b3bf04","fromSide":"left","toNode":"1c21435aeca5dc15","toSide":"right","color":"1"},
+		{"id":"db456ebbb2646acd","fromNode":"d6922ae57c80ebf0","fromSide":"bottom","toNode":"a1313b574fe7b9e6","toSide":"right","color":"1"},
+		{"id":"e0dee59493f1eaab","fromNode":"c66320334d2bf86f","fromSide":"right","toNode":"f8ed425319290955","toSide":"left","color":"1"},
+		{"id":"eb33b91209093343","fromNode":"6422f50262d59789","fromSide":"top","toNode":"a9896557a4f32a3f","toSide":"bottom","color":"5"},
+		{"id":"41626076919bcee7","fromNode":"68cd465699671d6b","fromSide":"bottom","toNode":"bbfc8c5e868317f3","toSide":"top","color":"5"},
+		{"id":"b023523ed4ed5bb7","fromNode":"d1f67cd7bd7e2afa","fromSide":"top","toNode":"e706b8a8f89250f0","toSide":"bottom","color":"5"}
+	]
+}
