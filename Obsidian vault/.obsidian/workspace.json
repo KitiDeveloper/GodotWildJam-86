@@ -11,14 +11,17 @@
             "id": "218966880c55b6e3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Godot Wild Jam #86/Jammer Registry.md",
-                "mode": "source",
-                "source": false
+                "file": "Godot Wild Jam #86/Art/Graphics Guide.canvas",
+                "viewState": {
+                  "x": -833.8140144835293,
+                  "y": -672.6940637976003,
+                  "zoom": -1.6498069981285877
+                }
               },
-              "icon": "lucide-file",
-              "title": "Jammer Registry"
+              "icon": "lucide-layout-dashboard",
+              "title": "Graphics Guide"
             }
           }
         ]
@@ -171,13 +174,18 @@
   },
   "active": "218966880c55b6e3",
   "lastOpenFiles": [
-    "Godot Wild Jam #86/Game Design Document.md",
+    "Geometry 0007.jpg",
     "Godot Wild Jam #86/Art/Graphics Guide.canvas",
-    "Godot Wild Jam #86/Image Bin/Geometry 0004.jpg",
-    "Godot Wild Jam #86/Image Bin/Geometry 0002.jpg",
-    "Godot Wild Jam #86/Image Bin/Geometry 0001.jpg",
+    "Texturing 0006.jpeg",
+    "Godot Wild Jam #86/Image Bin/Texturing 0005.jpg",
+    "Texturing 0007.jpg",
+    "Texturing 0008.jpeg",
+    "Godot Wild Jam #86/Image Bin/Texturing 0001.jpeg",
+    "Texturing 0009.jpeg",
+    "Godot Wild Jam #86/Image Bin/Texturing 0004.jpeg",
+    "Godot Wild Jam #86/Image Bin/Texturing 0003.jpeg",
     "Godot Wild Jam #86/Image Bin/Texturing 0002.jpeg",
-    "Godot Wild Jam #86/Image Bin/Geometry 0003.jpg",
-    "Godot Wild Jam #86/Image Bin/Texturing 0001.jpeg"
+    "Godot Wild Jam #86/Jammer Registry.md",
+    "Godot Wild Jam #86/Game Design Document.md"
   ]
 }
