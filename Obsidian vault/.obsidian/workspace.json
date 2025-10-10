@@ -4,24 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "c5c023769a7e8093",
+        "id": "6d1750ae363a3c73",
         "type": "tabs",
         "children": [
           {
-            "id": "218966880c55b6e3",
+            "id": "98737464206abf52",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Godot Wild Jam #86/Art/Graphics Guide.canvas",
+                "file": "Godot Wild Jam #86/Personal Spaces/Kiti's WhiteBoard.canvas",
                 "viewState": {
-                  "x": -833.8140144835293,
-                  "y": -672.6940637976003,
-                  "zoom": -1.6498069981285877
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Graphics Guide"
+              "title": "Kiti's WhiteBoard"
             }
           }
         ]
@@ -172,10 +172,25 @@
       "bases:Create new base": false
     }
   },
-  "active": "218966880c55b6e3",
+  "active": "98737464206abf52",
   "lastOpenFiles": [
-    "Geometry 0007.jpg",
+    "sddefault (2).jpg",
+    "Godot Wild Jam #86/Personal Spaces/Kiti's Personal Note.md",
+    "Godot Wild Jam #86/Personal Spaces/Horizon's WhiteBoard.canvas",
+    "Godot Wild Jam #86/Personal Spaces/Horizon's Personal Note.md",
+    "Godot Wild Jam #86/SorceGit Guide.md",
+    "Godot Wild Jam #86/Task Board.md",
+    "Godot Wild Jam #86/Game Design Document.md",
+    "Godot Wild Jam #86/Jammer Registry.md",
+    "Godot Wild Jam #86/Personal Spaces/Ginger's Personal Note.md",
+    "Godot Wild Jam #86/Personal Spaces/Miles's WhiteBoard.canvas",
+    "Godot Wild Jam #86/Personal Spaces/Miles's Personal Note.md",
+    "Godot Wild Jam #86/Personal Spaces/Kiti's WhiteBoard.canvas",
+    "Godot Wild Jam #86/Personal Spaces/Ginger's WhiteBoard.canvas",
     "Godot Wild Jam #86/Art/Graphics Guide.canvas",
+    "Godot Wild Jam 1.md",
+    "Godot Wild Jam.md",
+    "Geometry 0007.jpg",
     "Texturing 0006.jpeg",
     "Godot Wild Jam #86/Image Bin/Texturing 0005.jpg",
     "Texturing 0007.jpg",
@@ -184,8 +199,6 @@
     "Texturing 0009.jpeg",
     "Godot Wild Jam #86/Image Bin/Texturing 0004.jpeg",
     "Godot Wild Jam #86/Image Bin/Texturing 0003.jpeg",
-    "Godot Wild Jam #86/Image Bin/Texturing 0002.jpeg",
-    "Godot Wild Jam #86/Jammer Registry.md",
-    "Godot Wild Jam #86/Game Design Document.md"
+    "Godot Wild Jam #86/Image Bin/Texturing 0002.jpeg"
   ]
 }

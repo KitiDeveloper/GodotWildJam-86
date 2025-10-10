@@ -10,8 +10,8 @@ _(mark who handled what as you go)_
 - [x] Setup Obsidian vault - @Kiti
 - [x] List required programs for jam group - @Kiti
 - [ ] find out jam members availability - 🟡 **Medium** #Admin
-- [ ] get jam group set up on GitHub - 🔺 **High** #admin
-- [ ] get jam group set up on Obsidian - 🟡 **Medium** #admin
+- [x] get jam group set up on GitHub - 🔺 **High** #admin
+- [x] get jam group set up on Obsidian - 🟡 **Medium** #admin
 
 ---
 ## 🧩 Core Gameplay

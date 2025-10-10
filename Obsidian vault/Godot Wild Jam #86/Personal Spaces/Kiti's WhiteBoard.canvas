@@ -1,1 +1,6 @@
-{}
+{
+	"nodes":[
+		{"id":"08eb3f0f69570e6b","x":-520,"y":-340,"width":400,"height":300,"type":"file","file":"sddefault (2).jpg"}
+	],
+	"edges":[]
+}
