@@ -2,88 +2,90 @@
 ---
 ## 🎮 1. Game Overview
 **Title:**  
-> _Enter your project name here_
+>babushka with a GUN
 
 **Genre / Core Loop:**  
-> _e.g. physics puzzler, roguelike, platformer with time-rewind gimmick_
+> stealth game one mask shows what others see the other mask shows you what you need
 
 **Elevator Pitch:**  
-> _One-sentence “why it’s cool” summary_
+> Rob a Russian missile silo as a babushka with a sunberow and a gun how needs these special mask in order to see
 
 **Intended Platform:**  
-> _PC / Web / Mobile_
+> _PC / Web / 
 
 **Target Session Length:**  
-> _Example: 10–15 minutes per run_
+> 10–15 minutes per run_
 
 ---
 
 ## 💡 2. Core Concept
 **Main Hook / Unique Mechanic:**  
-> _Describe the thing that makes it stand out_
+> Information you need requires you to wear a mask to see said information but you have to switch between the mask as you can't see all information at once also your a slow ass grandma
 
 **Player Goal:**  
-> _What’s the player trying to accomplish?_
+> big bucks big bills all the money
 
 **Failure Condition:**  
-> _What makes them lose / restart?_
+> your get arrested
 
 **Progression:**  
-> _How does it ramp up? levels, waves, upgrades, etc._
+> security gets more dense
 
 ---
 
 ## 🧩 3. Gameplay Details
 **Controls:**  
-> _Keyboard / mouse / controller mapping_
+> _Keyboard / mouse
 
 **Core Systems:**  
 - Movement  
 - Combat / Interaction  
-- Resource / Scoring systems  
-- Special abilities  
+- win and loss  
+- two alternate visions
+- keypad logic
+- AI detecting
+- Ai movement
 
 **Game Flow:**  
-> _Short outline of a full loop: Start → Play → End → Retry_
+> Start → Play → End → Retry_
 
 ---
 
 ## 🎨 4. Art & Visual Direction
 **Art Style Keywords:**  
-> _Example: low-poly, pixel, hand-drawn, surreal_
+> Grimey,Blocky-solid colors
 
 **Color Palette:**  
-> _Paste hex codes or rough description_
+> Bright, harsh grays with strong highlights
 
 **UI Notes:**  
-> _Minimalist / diegetic / skeuomorphic etc._
+> _Minimalist
 
 **Visual Inspirations:**  
-> _Games, shows, art pieces you’re channeling_
+> 
 
 ---
 
 ## 🔊 5. Audio
 **Music Direction:**  
-> _Mood, instruments, tempo_
-
+> Russian Hard Bass, 
 **Sound Effects List:**  
-> _Footsteps, UI clicks, explosions, ambient loops_
+> _Footsteps, UI clicks, explosions, ambient loops, electronics, russian radia chatter, farts, guns, melee, grunts,
 
 **Voice / Narrative Audio:**  
-> _If any; describe tone & style_
+> none just gibberish
 
 ---
 
 ## 📖 6. Narrative / Theme (optional)
 **Premise:**  
-> _One paragraph world/setup_
+> Your a babushka trying to bribe a USSR official to get your son out of jail but as it so happens your kinda broke so you gotta rob a generals secret stash but its kept in a nuckler missile silo. the mask you found were from chernobyl you have no idea how or why they work.
 
 **Tone / Emotion:**  
-> _Funny? melancholic? eerie?_
+> _Funny? slavvic trash
 
 **Characters:**  
-> _Name, role, one-liner personality notes_
+> babushka, NIgal Ferage (the official your bribing), Keir Stalin(the guy your robbing)
 
 ---
 
