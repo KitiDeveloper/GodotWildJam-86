@@ -1,13 +1,32 @@
-[gd_scene load_steps=4 format=3 uid="uid://41p7xvyijvy0"]
+[gd_scene load_steps=8 format=3 uid="uid://41p7xvyijvy0"]
 
 [ext_resource type="Material" uid="uid://c34epdrb052kh" path="res://ProtoType_Tools/Textures/Dark/Texture_07.tres" id="1_457uk"]
 [ext_resource type="Material" uid="uid://dsimmi4yon4fc" path="res://ProtoType_Tools/Textures/Orange/Texture_05.tres" id="2_sr1yi"]
 [ext_resource type="Material" uid="uid://byhmwrf00h0a7" path="res://ProtoType_Tools/Textures/Green/Texture_05.tres" id="3_w6hgi"]
+[ext_resource type="PackedScene" uid="uid://bgejr1a50xrhe" path="res://Scenes/Player.tscn" id="4_nw68e"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_nw68e"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_crfra"]
+sky_material = SubResource("ProceduralSkyMaterial_nw68e")
+
+[sub_resource type="Environment" id="Environment_rn6dn"]
+background_mode = 2
+background_energy_multiplier = 0.0
+sky = SubResource("Sky_crfra")
+tonemap_mode = 2
+glow_enabled = true
 
 [node name="Node3D" type="Node3D"]
 
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_rn6dn")
+
 [node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
 use_collision = true
+collision_mask = 2
 
 [node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D"]
 size = Vector3(100, 1, 100)
@@ -1073,3 +1092,10 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -24.
 operation = 2
 size = Vector3(2, 3, 2)
 material = ExtResource("2_sr1yi")
+
+[node name="Player" parent="." instance=ExtResource("4_nw68e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.352016, 1.5208979, -2.030991)
+
+[node name="RotateCoolDown" type="Timer" parent="."]
+wait_time = 0.3
+one_shot = true
