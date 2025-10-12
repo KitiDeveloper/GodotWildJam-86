@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://7jeoiu3lktxg"]
+
+[ext_resource type="PackedScene" uid="uid://c61sbyj2lf88l" path="res://3D/MediumProps/SquatRack/SquatRack.glb" id="1_c85or"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nhllk"]
+size = Vector3(0.5789795, 2.52417, 1.7087402)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jx4if"]
+size = Vector3(1.5740967, 0.78912354, 0.15533447)
+
+[node name="SquatRack2" instance=ExtResource("1_c85or")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.23529053, 1.2557373, 0.004272461)
+shape = SubResource("BoxShape3D_nhllk")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.21722412, 0.38674927, 0.79348516)
+shape = SubResource("BoxShape3D_jx4if")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.21722412, 0.38674927, -0.7925271)
+shape = SubResource("BoxShape3D_jx4if")

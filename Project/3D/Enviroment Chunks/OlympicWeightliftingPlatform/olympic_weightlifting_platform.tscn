@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cd7as8akpwrii"]
+
+[ext_resource type="PackedScene" uid="uid://bp01v50ucmlfu" path="res://3D/Enviroment Chunks/OlympicWeightliftingPlatform/OlympicWeightliftingPlatform.glb" id="1_n2khs"]
+
+[node name="OlympicWeightliftingPlatform2" instance=ExtResource("1_n2khs")]

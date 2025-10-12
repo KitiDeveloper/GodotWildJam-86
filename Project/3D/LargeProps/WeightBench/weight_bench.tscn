@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://cbvtjcmltflym"]
+
+[ext_resource type="PackedScene" uid="uid://clndo1clmcfb7" path="res://3D/LargeProps/WeightBench/WeightBench.glb" id="1_udasr"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qmrsa"]
+size = Vector3(0.13769531, 1.6987915, 0.6706543)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3b6h0"]
+size = Vector3(0.35954285, 1.2875977, 1.3140259)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_60dt7"]
+size = Vector3(1, 1.2826538, 0.40423584)
+
+[node name="WeightBench2" instance=ExtResource("1_udasr")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.47705078, 0.8357239, 0.0013427734)
+shape = SubResource("BoxShape3D_qmrsa")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4756056, 0.8357239, 0.0013427734)
+shape = SubResource("BoxShape3D_qmrsa")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0048294067, 0.63061523, 0.63412476)
+shape = SubResource("BoxShape3D_3b6h0")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="StaticBody3D" index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6305847, 0.13467407)
+shape = SubResource("BoxShape3D_60dt7")

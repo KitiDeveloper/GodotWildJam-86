@@ -1,12 +1,15 @@
-[gd_scene load_steps=11 format=3 uid="uid://41p7xvyijvy0"]
+[gd_scene load_steps=14 format=3 uid="uid://41p7xvyijvy0"]
 
 [ext_resource type="Material" uid="uid://c34epdrb052kh" path="res://ProtoType_Tools/Textures/Dark/Texture_07.tres" id="1_457uk"]
 [ext_resource type="Material" uid="uid://dsimmi4yon4fc" path="res://ProtoType_Tools/Textures/Orange/Texture_05.tres" id="2_sr1yi"]
 [ext_resource type="Material" uid="uid://byhmwrf00h0a7" path="res://ProtoType_Tools/Textures/Green/Texture_05.tres" id="3_w6hgi"]
 [ext_resource type="PackedScene" uid="uid://bgejr1a50xrhe" path="res://Scenes/Player.tscn" id="4_nw68e"]
 [ext_resource type="PackedScene" uid="uid://b41dypo4vopbx" path="res://3D/MediumProps/RangeTarget/range_target.tscn" id="5_crfra"]
+[ext_resource type="PackedScene" uid="uid://cd7as8akpwrii" path="res://3D/Enviroment Chunks/OlympicWeightliftingPlatform/olympic_weightlifting_platform.tscn" id="5_vmswb"]
 [ext_resource type="PackedScene" uid="uid://bbyo3pc6btjvt" path="res://3D/MediumProps/WornBasicTable/worn_basic_table.tscn" id="6_rn6dn"]
 [ext_resource type="PackedScene" uid="uid://ct8yk6exrph8k" path="res://3D/MediumProps/PipeMetalChair/pipe_metal_chair.tscn" id="7_5dudv"]
+[ext_resource type="PackedScene" uid="uid://7jeoiu3lktxg" path="res://3D/MediumProps/SquatRack/squat_rack.tscn" id="9_ri28s"]
+[ext_resource type="PackedScene" uid="uid://cbvtjcmltflym" path="res://3D/LargeProps/WeightBench/weight_bench.tscn" id="10_7pons"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_nw68e"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -21,7 +24,7 @@ background_energy_multiplier = 0.0
 sky = SubResource("Sky_crfra")
 ambient_light_source = 2
 ambient_light_color = Color(1, 1, 1, 1)
-ambient_light_energy = 0.5
+ambient_light_energy = 0.0
 tonemap_mode = 2
 glow_enabled = true
 
@@ -443,36 +446,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.5, 1.5, -8.260903)
 size = Vector3(3, 2, 0.5)
 material = ExtResource("2_sr1yi")
 
-[node name="CSGBox3D162" type="CSGBox3D" parent="CSGCombiner3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.100676, 1.5, -16.059105)
-size = Vector3(0.1829834, 2, 1)
-material = ExtResource("2_sr1yi")
-
-[node name="CSGBox3D163" type="CSGBox3D" parent="CSGCombiner3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.58881927, 1.5, -16.059105)
-size = Vector3(0.1829834, 2, 1)
-material = ExtResource("2_sr1yi")
-
-[node name="CSGBox3D164" type="CSGBox3D" parent="CSGCombiner3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1218073, 1.5, -16.059105)
-size = Vector3(0.1829834, 2, 1)
-material = ExtResource("2_sr1yi")
-
-[node name="CSGBox3D165" type="CSGBox3D" parent="CSGCombiner3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.659153, 1.5, -16.059105)
-size = Vector3(0.1829834, 2, 1)
-material = ExtResource("2_sr1yi")
-
-[node name="CSGBox3D166" type="CSGBox3D" parent="CSGCombiner3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.2707624, 1.5, -16.059105)
-size = Vector3(0.1829834, 2, 1)
-material = ExtResource("2_sr1yi")
-
-[node name="CSGBox3D167" type="CSGBox3D" parent="CSGCombiner3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.758598, 1.5, -16.059105)
-size = Vector3(0.1829834, 2, 1)
-material = ExtResource("2_sr1yi")
-
 [node name="CSGBox3D12" type="CSGBox3D" parent="CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1.5, 25)
 size = Vector3(8, 2, 0.5)
@@ -647,14 +620,6 @@ material = ExtResource("3_w6hgi")
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 12, 1, -13.5)
 material = ExtResource("3_w6hgi")
 
-[node name="CSGBox3D161" type="CSGBox3D" parent="CSGCombiner3D"]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.12125206, 1, -16.087532)
-material = ExtResource("3_w6hgi")
-
-[node name="CSGBox3D168" type="CSGBox3D" parent="CSGCombiner3D"]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1.4677372, 1, -16.087532)
-material = ExtResource("3_w6hgi")
-
 [node name="CSGBox3D206" type="CSGBox3D" parent="CSGCombiner3D"]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 12.105192, 1, -20.545597)
 material = ExtResource("3_w6hgi")
@@ -673,22 +638,6 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 13.8
 size = Vector3(1, 1, 1.6229248)
 material = ExtResource("3_w6hgi")
 
-[node name="CSGBox3D169" type="CSGBox3D" parent="CSGCombiner3D"]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -6.6072683, 1, -16.087532)
-material = ExtResource("3_w6hgi")
-
-[node name="CSGBox3D170" type="CSGBox3D" parent="CSGCombiner3D"]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -5.2935123, 1, -16.087532)
-material = ExtResource("3_w6hgi")
-
-[node name="CSGBox3D171" type="CSGBox3D" parent="CSGCombiner3D"]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -10.389732, 1, -16.087532)
-material = ExtResource("3_w6hgi")
-
-[node name="CSGBox3D172" type="CSGBox3D" parent="CSGCombiner3D"]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.7728539, 1, -16.087532)
-material = ExtResource("3_w6hgi")
-
 [node name="CSGBox3D112" type="CSGBox3D" parent="CSGCombiner3D"]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 5.6083984, 1, -10.996704)
 size = Vector3(5.515381, 1, 1.2792969)
@@ -696,21 +645,6 @@ material = ExtResource("3_w6hgi")
 
 [node name="CSGBox3D61" type="CSGBox3D" parent="CSGCombiner3D"]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 10.387426, 1, -20.35483)
-size = Vector3(3, 1, 1)
-material = ExtResource("3_w6hgi")
-
-[node name="CSGBox3D155" type="CSGBox3D" parent="CSGCombiner3D"]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -8.612574, 1, -20.35483)
-size = Vector3(3, 1, 1)
-material = ExtResource("3_w6hgi")
-
-[node name="CSGBox3D156" type="CSGBox3D" parent="CSGCombiner3D"]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -3.436498, 1, -20.35483)
-size = Vector3(3, 1, 1)
-material = ExtResource("3_w6hgi")
-
-[node name="CSGBox3D157" type="CSGBox3D" parent="CSGCombiner3D"]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1.8018866, 1, -20.35483)
 size = Vector3(3, 1, 1)
 material = ExtResource("3_w6hgi")
 
@@ -948,21 +882,6 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 5.16
 size = Vector3(0.5062256, 1, 1.1953125)
 material = ExtResource("3_w6hgi")
 
-[node name="CSGBox3D158" type="CSGBox3D" parent="CSGCombiner3D"]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1.8739328, 1, -19.5)
-size = Vector3(1, 1, 2.723236)
-material = ExtResource("3_w6hgi")
-
-[node name="CSGBox3D159" type="CSGBox3D" parent="CSGCombiner3D"]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -8.540527, 1, -19.5)
-size = Vector3(1, 1, 2.723236)
-material = ExtResource("3_w6hgi")
-
-[node name="CSGBox3D160" type="CSGBox3D" parent="CSGCombiner3D"]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -3.4466236, 1, -19.5)
-size = Vector3(1, 1, 2.723236)
-material = ExtResource("3_w6hgi")
-
 [node name="CSGBox3D129" type="CSGBox3D" parent="CSGCombiner3D"]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -18.956545, 1, -26.5)
 size = Vector3(3, 1, 2)
@@ -1072,6 +991,20 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.352016, 1.5208979, -2.030
 wait_time = 0.3
 one_shot = true
 
+[node name="EnviromentChunks" type="Node3D" parent="."]
+transform = Transform3D(-0.9966816, 0, 0.081399314, 0, 1, 0, -0.081399314, 0, -0.9966816, 0.49801058, 0.517354, -6.9951234)
+
+[node name="OlympicWeightliftingPlatforms" type="Node3D" parent="EnviromentChunks"]
+
+[node name="OlympicWeightliftingPlatform2" parent="EnviromentChunks/OlympicWeightliftingPlatforms" instance=ExtResource("5_vmswb")]
+transform = Transform3D(-0.9966816, 0, -0.081399314, 0, 1, 0, 0.081399314, 0, -0.9966816, -0.37827826, -0.015695632, 10.565656)
+
+[node name="OlympicWeightliftingPlatform3" parent="EnviromentChunks/OlympicWeightliftingPlatforms" instance=ExtResource("5_vmswb")]
+transform = Transform3D(-0.9966816, 0, -0.081399314, 0, 1, 0, 0.081399314, 0, -0.9966816, 4.5931406, -0.015695632, 10.159638)
+
+[node name="OlympicWeightliftingPlatform4" parent="EnviromentChunks/OlympicWeightliftingPlatforms" instance=ExtResource("5_vmswb")]
+transform = Transform3D(-0.9966816, 0, -0.081399314, 0, 1, 0, 0.081399314, 0, -0.9966816, 9.5843315, -0.015695632, 9.752006)
+
 [node name="MediumProps" type="Node3D" parent="."]
 
 [node name="RangeTargets" type="Node3D" parent="MediumProps"]
@@ -1108,6 +1041,33 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.8155503, 0.5044639, -25.639
 [node name="WornBasicTable3" parent="MediumProps/WornBasicTables" instance=ExtResource("6_rn6dn")]
 transform = Transform3D(-0.32099316, -0.94376147, 0.07923322, 0, 0.0836604, 0.9964945, -0.94708145, 0.31986788, -0.026854418, -20.510695, 0.8102491, 0.91666985)
 
+[node name="WornBasicTable4" parent="MediumProps/WornBasicTables" instance=ExtResource("6_rn6dn")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1.6076624, 0.5044658, -6.7695656)
+
+[node name="WornBasicTable5" parent="MediumProps/WornBasicTables" instance=ExtResource("6_rn6dn")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1.6076624, 0.5044658, -12.233147)
+
+[node name="WornBasicTable6" parent="MediumProps/WornBasicTables" instance=ExtResource("6_rn6dn")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1.6076624, 0.5044658, -9.541848)
+
+[node name="WornBasicTable7" parent="MediumProps/WornBasicTables" instance=ExtResource("6_rn6dn")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.39233756, 0.5044658, -6.7695656)
+
+[node name="WornBasicTable8" parent="MediumProps/WornBasicTables" instance=ExtResource("6_rn6dn")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.39233756, 0.5044658, -12.233147)
+
+[node name="WornBasicTable9" parent="MediumProps/WornBasicTables" instance=ExtResource("6_rn6dn")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.39233756, 0.5044658, -9.541848)
+
+[node name="WornBasicTable10" parent="MediumProps/WornBasicTables" instance=ExtResource("6_rn6dn")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -2.3923376, 0.5044658, -6.7695656)
+
+[node name="WornBasicTable11" parent="MediumProps/WornBasicTables" instance=ExtResource("6_rn6dn")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -2.3923376, 0.5044658, -12.233147)
+
+[node name="WornBasicTable12" parent="MediumProps/WornBasicTables" instance=ExtResource("6_rn6dn")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -2.3923376, 0.5044658, -9.541848)
+
 [node name="PipeMetalChairs" type="Node3D" parent="MediumProps"]
 
 [node name="PipeMetalChair" parent="MediumProps/PipeMetalChairs" instance=ExtResource("7_5dudv")]
@@ -1134,56 +1094,53 @@ transform = Transform3D(-0.009965718, 0, -0.99995035, 0, 1, 0, 0.99995035, 0, -0
 [node name="PipeMetalChair8" parent="MediumProps/PipeMetalChairs" instance=ExtResource("7_5dudv")]
 transform = Transform3D(-8.940697e-08, 0, 1.0000001, 0, 1, 0, -1.0000001, 0, -8.940697e-08, 6.815045, 0.51735353, -25.831263)
 
-[node name="WornBasicTable" parent="." instance=ExtResource("6_rn6dn")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1.6076624, 0.5044658, -6.7695656)
-
-[node name="WornBasicTable2" parent="." instance=ExtResource("6_rn6dn")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1.6076624, 0.5044658, -12.233147)
-
-[node name="WornBasicTable3" parent="." instance=ExtResource("6_rn6dn")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1.6076624, 0.5044658, -9.541848)
-
-[node name="WornBasicTable4" parent="." instance=ExtResource("6_rn6dn")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.39233756, 0.5044658, -6.7695656)
-
-[node name="WornBasicTable5" parent="." instance=ExtResource("6_rn6dn")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.39233756, 0.5044658, -12.233147)
-
-[node name="WornBasicTable6" parent="." instance=ExtResource("6_rn6dn")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.39233756, 0.5044658, -9.541848)
-
-[node name="WornBasicTable7" parent="." instance=ExtResource("6_rn6dn")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -2.3923376, 0.5044658, -6.7695656)
-
-[node name="WornBasicTable8" parent="." instance=ExtResource("6_rn6dn")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -2.3923376, 0.5044658, -12.233147)
-
-[node name="WornBasicTable9" parent="." instance=ExtResource("6_rn6dn")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -2.3923376, 0.5044658, -9.541848)
-
-[node name="PipeMetalChair2" parent="." instance=ExtResource("7_5dudv")]
+[node name="PipeMetalChair9" parent="MediumProps/PipeMetalChairs" instance=ExtResource("7_5dudv")]
 transform = Transform3D(-0.9966816, 0, 0.081399314, 0, 1, 0, -0.081399314, 0, -0.9966816, 0.49801058, 0.517354, -6.9951234)
 
-[node name="PipeMetalChair3" parent="." instance=ExtResource("7_5dudv")]
+[node name="PipeMetalChair10" parent="MediumProps/PipeMetalChairs" instance=ExtResource("7_5dudv")]
 transform = Transform3D(-0.99938595, 0, -0.035038978, 0, 1, 0, 0.035038978, 0, -0.99938595, 1.4651442, 0.517354, -9.294351)
 
-[node name="PipeMetalChair4" parent="." instance=ExtResource("7_5dudv")]
+[node name="PipeMetalChair11" parent="MediumProps/PipeMetalChairs" instance=ExtResource("7_5dudv")]
 transform = Transform3D(-0.99027294, 0, 0.1391386, 0, 1, 0, -0.1391386, 0, -0.99027294, -0.5964813, 0.517354, -6.8674273)
 
-[node name="PipeMetalChair5" parent="." instance=ExtResource("7_5dudv")]
+[node name="PipeMetalChair12" parent="MediumProps/PipeMetalChairs" instance=ExtResource("7_5dudv")]
 transform = Transform3D(-0.9963557, 0, -0.08529514, 0, 1, 0, 0.08529514, 0, -0.9963557, -0.5588924, 0.517354, -12.075159)
 
-[node name="PipeMetalChair6" parent="." instance=ExtResource("7_5dudv")]
+[node name="PipeMetalChair13" parent="MediumProps/PipeMetalChairs" instance=ExtResource("7_5dudv")]
 transform = Transform3D(-0.96958214, 0, 0.24476597, 0, 1, 0, -0.24476597, 0, -0.96958214, -0.9534828, 0.517354, -9.486707)
 
-[node name="PipeMetalChair7" parent="." instance=ExtResource("7_5dudv")]
+[node name="PipeMetalChair14" parent="MediumProps/PipeMetalChairs" instance=ExtResource("7_5dudv")]
 transform = Transform3D(-0.96958214, 0, 0.24476597, 0, 1, 0, -0.24476597, 0, -0.96958214, 1.4867561, 0.517354, -13.263649)
 
-[node name="PipeMetalChair8" parent="." instance=ExtResource("7_5dudv")]
+[node name="PipeMetalChair15" parent="MediumProps/PipeMetalChairs" instance=ExtResource("7_5dudv")]
 transform = Transform3D(-0.92069566, 0, -0.39028117, 0, 1, 0, 0.39028117, 0, -0.92069566, -2.6923487, 0.517354, -12.163067)
 
-[node name="PipeMetalChair9" parent="." instance=ExtResource("7_5dudv")]
+[node name="PipeMetalChair16" parent="MediumProps/PipeMetalChairs" instance=ExtResource("7_5dudv")]
 transform = Transform3D(-0.99997973, 0, 0.006352991, 0, 1, 0, -0.006352991, 0, -0.99997973, -2.9347727, 0.517354, -9.55776)
 
-[node name="PipeMetalChair10" parent="." instance=ExtResource("7_5dudv")]
+[node name="PipeMetalChair17" parent="MediumProps/PipeMetalChairs" instance=ExtResource("7_5dudv")]
 transform = Transform3D(-0.95088387, 0, -0.30954805, 0, 1, 0, 0.30954805, 0, -0.95088387, -2.7038774, 0.517354, -6.5577602)
+
+[node name="SquatRacks" type="Node3D" parent="MediumProps"]
+
+[node name="SquatRack2" parent="MediumProps/SquatRacks" instance=ExtResource("9_ri28s")]
+transform = Transform3D(-4.4703484e-08, 0, 1, 0, 1, 0, -1, 0, -4.4703484e-08, 1.7407327, 0.60421896, -16.17852)
+
+[node name="SquatRack3" parent="MediumProps/SquatRacks" instance=ExtResource("9_ri28s")]
+transform = Transform3D(-4.4703484e-08, 0, 1, 0, 1, 0, -1, 0, -4.4703484e-08, -3.259267, 0.60421896, -16.17852)
+
+[node name="SquatRack4" parent="MediumProps/SquatRacks" instance=ExtResource("9_ri28s")]
+transform = Transform3D(-4.4703484e-08, 0, 1, 0, 1, 0, -1, 0, -4.4703484e-08, -8.259267, 0.60421896, -16.17852)
+
+[node name="LargeProps" type="Node3D" parent="."]
+
+[node name="WeightBenchs" type="Node3D" parent="LargeProps"]
+
+[node name="WeightBench2" parent="LargeProps/WeightBenchs" instance=ExtResource("10_7pons")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -3.2457342, 0.52939904, -21.353962)
+
+[node name="WeightBench3" parent="LargeProps/WeightBenchs" instance=ExtResource("10_7pons")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1.7542658, 0.52939904, -21.353962)
+
+[node name="WeightBench4" parent="LargeProps/WeightBenchs" instance=ExtResource("10_7pons")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -8.245734, 0.52939904, -21.353962)
