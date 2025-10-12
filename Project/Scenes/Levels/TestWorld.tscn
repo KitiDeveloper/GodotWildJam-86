@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://41p7xvyijvy0"]
+[gd_scene load_steps=15 format=3 uid="uid://41p7xvyijvy0"]
 
 [ext_resource type="Material" uid="uid://c34epdrb052kh" path="res://ProtoType_Tools/Textures/Dark/Texture_07.tres" id="1_457uk"]
 [ext_resource type="Material" uid="uid://dsimmi4yon4fc" path="res://ProtoType_Tools/Textures/Orange/Texture_05.tres" id="2_sr1yi"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://ct8yk6exrph8k" path="res://3D/MediumProps/PipeMetalChair/pipe_metal_chair.tscn" id="7_5dudv"]
 [ext_resource type="PackedScene" uid="uid://7jeoiu3lktxg" path="res://3D/MediumProps/SquatRack/squat_rack.tscn" id="9_ri28s"]
 [ext_resource type="PackedScene" uid="uid://cbvtjcmltflym" path="res://3D/LargeProps/WeightBench/weight_bench.tscn" id="10_7pons"]
+[ext_resource type="PackedScene" uid="uid://bqmanykblb6g1" path="res://3D/LargeProps/RadioPrinter/radio_printer.tscn" id="11_qltjj"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_nw68e"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -648,11 +649,6 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 10.3
 size = Vector3(3, 1, 1)
 material = ExtResource("3_w6hgi")
 
-[node name="CSGBox3D46" type="CSGBox3D" parent="CSGCombiner3D"]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -9, 1, -10)
-size = Vector3(6, 1, 1)
-material = ExtResource("3_w6hgi")
-
 [node name="CSGBox3D116" type="CSGBox3D" parent="CSGCombiner3D"]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -19, 1, -10.5)
 size = Vector3(9, 1, 1)
@@ -750,11 +746,6 @@ material = ExtResource("3_w6hgi")
 [node name="CSGBox3D51" type="CSGBox3D" parent="CSGCombiner3D"]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -25.534851, 1, 10.1137085)
 size = Vector3(9.499878, 1, 0.786499)
-material = ExtResource("3_w6hgi")
-
-[node name="CSGBox3D47" type="CSGBox3D" parent="CSGCombiner3D"]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -6.5, 1, -12.5)
-size = Vector3(1, 1, 4)
 material = ExtResource("3_w6hgi")
 
 [node name="CSGBox3D76" type="CSGBox3D" parent="CSGCombiner3D"]
@@ -957,11 +948,6 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 8.97
 size = Vector3(0.7788086, 1, 8)
 material = ExtResource("3_w6hgi")
 
-[node name="CSGBox3D50" type="CSGBox3D" parent="CSGCombiner3D"]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -6.5, 1, -7.5)
-size = Vector3(1, 1, 4)
-material = ExtResource("3_w6hgi")
-
 [node name="CSGBox3D3" type="CSGBox3D" parent="CSGCombiner3D"]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 5, 1.5, 5)
 size = Vector3(40, 2, 0.5)
@@ -1144,3 +1130,26 @@ transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1.75
 
 [node name="WeightBench4" parent="LargeProps/WeightBenchs" instance=ExtResource("10_7pons")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -8.245734, 0.52939904, -21.353962)
+
+[node name="RadioPrinters" type="Node3D" parent="LargeProps"]
+
+[node name="RadioPrinter2" parent="LargeProps/RadioPrinters" instance=ExtResource("11_qltjj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -11.335157, 0.5215468, -4.698832)
+
+[node name="RadioPrinter3" parent="LargeProps/RadioPrinters" instance=ExtResource("11_qltjj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -11.335157, 0.5215468, -5.698832)
+
+[node name="RadioPrinter4" parent="LargeProps/RadioPrinters" instance=ExtResource("11_qltjj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -11.335157, 0.5215468, -6.698832)
+
+[node name="RadioPrinter5" parent="LargeProps/RadioPrinters" instance=ExtResource("11_qltjj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -11.335157, 0.5215468, -7.698832)
+
+[node name="RadioPrinter6" parent="LargeProps/RadioPrinters" instance=ExtResource("11_qltjj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -11.335157, 0.5215468, -14.288195)
+
+[node name="RadioPrinter7" parent="LargeProps/RadioPrinters" instance=ExtResource("11_qltjj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -11.335157, 0.5215468, -13.288195)
+
+[node name="RadioPrinter8" parent="LargeProps/RadioPrinters" instance=ExtResource("11_qltjj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -11.335157, 0.5215468, -12.288195)
