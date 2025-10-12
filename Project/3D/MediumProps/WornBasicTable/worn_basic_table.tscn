@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbyo3pc6btjvt"]
+
+[ext_resource type="PackedScene" uid="uid://wfle0oib30su" path="res://3D/MediumProps/WornBasicTable/WornBasicTable.glb" id="1_2u4ie"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_leh3c"]
+size = Vector3(1.5067139, 0.75509644, 0.75683594)
+
+[node name="WornBasicTable" instance=ExtResource("1_2u4ie")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.1035156e-05, 0.3781891, 0.0024414063)
+shape = SubResource("BoxShape3D_leh3c")
