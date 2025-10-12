@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://b41dypo4vopbx"]
+
+[ext_resource type="PackedScene" uid="uid://chqkxu4my8key" path="res://3D/MediumProps/RangeTarget/RangeTarget.glb" id="1_rffpy"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rffpy"]
+size = Vector3(0.26104736, 1.7086792, 0.66552734)
+
+[node name="RangeTarget2" instance=ExtResource("1_rffpy")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="2"]
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0011901855, 0.86380005, 0.0075683594)
+shape = SubResource("BoxShape3D_rffpy")
