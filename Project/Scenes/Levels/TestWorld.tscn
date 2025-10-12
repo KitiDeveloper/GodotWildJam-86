@@ -25,7 +25,7 @@ background_energy_multiplier = 0.0
 sky = SubResource("Sky_crfra")
 ambient_light_source = 2
 ambient_light_color = Color(1, 1, 1, 1)
-ambient_light_energy = 0.0
+ambient_light_energy = 0.5
 tonemap_mode = 2
 glow_enabled = true
 
@@ -649,11 +649,6 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 10.3
 size = Vector3(3, 1, 1)
 material = ExtResource("3_w6hgi")
 
-[node name="CSGBox3D116" type="CSGBox3D" parent="CSGCombiner3D"]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -19, 1, -10.5)
-size = Vector3(9, 1, 1)
-material = ExtResource("3_w6hgi")
-
 [node name="CSGBox3D121" type="CSGBox3D" parent="CSGCombiner3D"]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -12.844482, 1, -9.5)
 size = Vector3(11, 1, 1.3110352)
@@ -1053,6 +1048,18 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -2.3
 
 [node name="WornBasicTable12" parent="MediumProps/WornBasicTables" instance=ExtResource("6_rn6dn")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -2.3923376, 0.5044658, -9.541848)
+
+[node name="WornBasicTable13" parent="MediumProps/WornBasicTables" instance=ExtResource("6_rn6dn")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -19.392338, 0.5044658, -7.0775843)
+
+[node name="WornBasicTable14" parent="MediumProps/WornBasicTables" instance=ExtResource("6_rn6dn")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -19.392338, 0.5044658, -13.954564)
+
+[node name="WornBasicTable15" parent="MediumProps/WornBasicTables" instance=ExtResource("6_rn6dn")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -19.392338, 0.5044658, -11.708498)
+
+[node name="WornBasicTable16" parent="MediumProps/WornBasicTables" instance=ExtResource("6_rn6dn")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -19.392338, 0.5044658, -9.373183)
 
 [node name="PipeMetalChairs" type="Node3D" parent="MediumProps"]
 
