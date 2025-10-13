@@ -1,0 +1,35 @@
+{
+	"nodes":[
+		{"id":"b089363e00bb08d1","x":500,"y":-400,"width":1200,"height":780,"color":"1","type":"group","label":"AI Stealth Detection"},
+		{"id":"eb1edc782b1b3e3f","x":-640,"y":-220,"width":860,"height":840,"color":"5","type":"group","label":"AI Navigation"},
+		{"id":"5b262899d8d59f8c","x":500,"y":440,"width":440,"height":700,"color":"4","type":"group","label":"AI Combat NAV"},
+		{"id":"30a5e63af5c9f35a","type":"file","file":"Screenshot 2025-10-13 063839.png","x":-620,"y":-200,"width":400,"height":187,"color":"5"},
+		{"id":"893f380db663358c","type":"file","file":"Screenshot 2025-10-13 063918.png","x":-200,"y":-200,"width":399,"height":187,"color":"5"},
+		{"id":"b277c5730cd0fbb2","x":-201,"y":200,"width":400,"height":178,"color":"5","type":"file","file":"Screenshot 2025-10-13 065806.png"},
+		{"id":"f906ee9aa09ef2ef","x":-620,"y":440,"width":820,"height":160,"color":"5","type":"text","text":"AI has a nav mesh to inform where it can go. Devs will generate/create every variation to account when the map changes such as doors closing happen.\nDuring combat it informs the direct route to the players last know location but when the path is cut/blocked the AI moves to special combat wait points until their needed."},
+		{"id":"9f507b06b97804c1","x":-619,"y":60,"width":819,"height":100,"color":"5","type":"text","text":"AI will move towards patrol points connected by chains to tell them which point to move to.\nIf a path is blocked we have a way to disable and enable chains so Ai agents won't try to walk through doors."},
+		{"id":"82ab25eb9ad2cc09","x":-620,"y":200,"width":400,"height":178,"color":"5","type":"file","file":"Screenshot 2025-10-13 064836.png"},
+		{"id":"dec9cce74f228469","x":520,"y":-80,"width":560,"height":80,"color":"1","type":"text","text":"Ai Vision cone is an area which draws a ray from the AI to the player to detect player with a delay depending on distance from AI "},
+		{"id":"2a1ccd9daeab9c5c","x":820,"y":20,"width":260,"height":234,"color":"1","type":"file","file":"Screenshot 2025-10-13 071033.png"},
+		{"id":"cac55e1592f01643","x":520,"y":20,"width":301,"height":234,"color":"1","type":"file","file":"Screenshot 2025-10-13 071110.png"},
+		{"id":"9a47a62130215835","x":520,"y":300,"width":560,"height":60,"color":"1","type":"text","text":"If the detection raycast hits a barrier first detection is cancelled"},
+		{"id":"97758051999a4d79","x":800,"y":-380,"width":280,"height":251,"color":"1","type":"file","file":"Screenshot 2025-10-13 070943.png"},
+		{"id":"cbe8cd1d15342f33","x":520,"y":-380,"width":262,"height":251,"color":"1","type":"file","file":"Screenshot 2025-10-13 070908.png"},
+		{"id":"93679d9d92db50af","x":1100,"y":-380,"width":537,"height":380,"color":"1","type":"file","file":"Screenshot 2025-10-13 072033.png"},
+		{"id":"13b083edfb494e1d","x":1100,"y":20,"width":537,"height":340,"color":"1","type":"text","text":"AI use a lowered raycast for detecting the player during stealth.\nAI uses Combat raycast to tell if it can shoot the player during combat"},
+		{"id":"0a487096a6be1d2a","x":520,"y":460,"width":400,"height":374,"color":"4","type":"file","file":"Screenshot 2025-10-13 072930.png"},
+		{"id":"c84a14fceabcfc7d","x":520,"y":860,"width":400,"height":260,"color":"4","type":"text","text":"During combat AI uses light inverse kinematics to find shortest rout to player.\nAI Agents have a preferred distance once their combat raycast can see the player they will take the shortest rout to their preferred distance from the player.\nOnce direct line of sight is lost the will be a short delay before they decide to move which is randomized."}
+	],
+	"edges":[
+		{"id":"69fe2f0f3bb64852","fromNode":"9f507b06b97804c1","fromSide":"top","toNode":"30a5e63af5c9f35a","toSide":"bottom"},
+		{"id":"4d45b11810f6dcf1","fromNode":"9f507b06b97804c1","fromSide":"top","toNode":"893f380db663358c","toSide":"bottom"},
+		{"id":"19050f5661444fde","fromNode":"f906ee9aa09ef2ef","fromSide":"top","toNode":"82ab25eb9ad2cc09","toSide":"bottom"},
+		{"id":"8bf7644853859567","fromNode":"f906ee9aa09ef2ef","fromSide":"top","toNode":"b277c5730cd0fbb2","toSide":"bottom"},
+		{"id":"4775cfc86c406ed4","fromNode":"dec9cce74f228469","fromSide":"top","toNode":"cbe8cd1d15342f33","toSide":"bottom"},
+		{"id":"c56bdb256527266e","fromNode":"dec9cce74f228469","fromSide":"top","toNode":"97758051999a4d79","toSide":"bottom"},
+		{"id":"c795428a9a6ef482","fromNode":"9a47a62130215835","fromSide":"top","toNode":"cac55e1592f01643","toSide":"bottom"},
+		{"id":"5678811a58444c1d","fromNode":"9a47a62130215835","fromSide":"top","toNode":"2a1ccd9daeab9c5c","toSide":"bottom"},
+		{"id":"f2765c6ec20acc82","fromNode":"eb1edc782b1b3e3f","fromSide":"right","toNode":"b089363e00bb08d1","toSide":"left"},
+		{"id":"8f533b2cd95d7f1f","fromNode":"b089363e00bb08d1","fromSide":"bottom","toNode":"5b262899d8d59f8c","toSide":"right"}
+	]
+}

@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Godot Wild Jam #86/Art/Graphics Guide.canvas",
+                "file": "Godot Wild Jam #86/Development/AI BluePrint.canvas",
                 "viewState": {
-                  "x": -366.316307198909,
-                  "y": 9.143445592122333,
-                  "zoom": 0.15625111931056412
+                  "x": 803.1681721853785,
+                  "y": 604.2124124141905,
+                  "zoom": -1.3333333333333333
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Graphics Guide"
+              "title": "AI BluePrint"
             }
           }
         ]
@@ -174,20 +174,24 @@
   },
   "active": "98737464206abf52",
   "lastOpenFiles": [
+    "Screenshot 2025-10-13 072930.png",
+    "Screenshot 2025-10-13 072033.png",
+    "Screenshot 2025-10-13 070908.png",
+    "Screenshot 2025-10-13 070943.png",
+    "Screenshot 2025-10-13 071033.png",
+    "Screenshot 2025-10-13 071110.png",
+    "Screenshot 2025-10-13 065806.png",
+    "Screenshot 2025-10-13 065034.png",
+    "Screenshot 2025-10-13 064836.png",
+    "Godot Wild Jam #86/Game Design Document.md",
+    "Godot Wild Jam #86/Development/AI BluePrint.canvas",
+    "Screenshot 2025-10-13 063918.png",
+    "Screenshot 2025-10-13 063839.png",
+    "Godot Wild Jam #86/Art/Graphics Guide.canvas",
+    "Godot Wild Jam #86/Development",
     "Godot Wild Jam #86/Personal Spaces/Kiti's WhiteBoard.canvas",
-    "Screenshot 2025-10-10 230426.png",
-    "Screenshot 2025-10-10 230527.png",
-    "Worker-and-Kolkhoz-Woman-Museum-moscow.jpg",
-    "The-Soviet-Wedding-Palace-in-Bishkek-2.jpg",
-    "Perego7.jpg",
-    "editorial-01-12.jpeg",
-    "3oyervv23wgJaA4R8de3q5.jpg",
-    "1000_F_207720104_VftHP9e1HnAMjUaNwQuHieNkszsOsKeE.jpg",
-    "ZIL-131-Russian-Truck-6x6-Camper-4.jpg",
-    "marko-kaufer-01.jpg",
     "Godot Wild Jam #86/Personal Spaces/Miles's Personal Note.md",
     "Godot Wild Jam #86/Personal Spaces/Miles's WhiteBoard.canvas",
-    "Godot Wild Jam #86/Game Design Document.md",
     "Godot Wild Jam #86/Personal Spaces/Horizon's Personal Note.md",
     "Godot Wild Jam #86/Personal Spaces/Horizon's WhiteBoard.canvas",
     "Godot Wild Jam #86/Rules & Guides.md",
@@ -197,7 +201,6 @@
     "Godot Wild Jam #86/Jammer Registry.md",
     "Godot Wild Jam #86/Personal Spaces/Ginger's Personal Note.md",
     "Godot Wild Jam #86/Personal Spaces/Ginger's WhiteBoard.canvas",
-    "Godot Wild Jam #86/Art/Graphics Guide.canvas",
     "Godot Wild Jam 1.md",
     "Godot Wild Jam.md"
   ]
