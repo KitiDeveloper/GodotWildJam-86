@@ -10,6 +10,11 @@ var turn_speed = 10
 var _last_dist := 1e9
 var _stuck_time := 0.0
 
+@export var next_points: Array[NodePath] = []
+@export var wait_min: float
+@export var wait_max: float
+@export var arrival_radius: float
+
 func _physics_process(_delta: float) -> void:
 	var ai_pos = global_position
 	var player_pos = Player.global_position
