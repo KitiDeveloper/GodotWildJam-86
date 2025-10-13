@@ -12,7 +12,7 @@ func _ready() -> void:
 	rotate_cooldown.timeout.connect(_on_rotate_cooldown_timeout)
 
 	
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	# --- movement ---
 	var input_dir := Input.get_vector("Movement Left", "Movement Right", "Movement Up", "Movement Down")
 	var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()

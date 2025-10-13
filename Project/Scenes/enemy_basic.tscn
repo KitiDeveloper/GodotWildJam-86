@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://cy1gr62iyyc4q"]
+[gd_scene load_steps=6 format=3 uid="uid://cy1gr62iyyc4q"]
 
 [ext_resource type="Script" uid="uid://dedev275n1ffa" path="res://Scripts/enemy_basic.gd" id="1_cbn6x"]
 
@@ -14,10 +14,16 @@ height = 1.75
 radius = 0.3
 height = 1.75
 
+[sub_resource type="CylinderMesh" id="CylinderMesh_cbn6x"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 1.0
+
 [node name="EnemyBasic" type="CharacterBody3D" groups=["enemies"]]
 script = ExtResource("1_cbn6x")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+cast_shadow = 0
 mesh = SubResource("CapsuleMesh_cbn6x")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
@@ -31,6 +37,33 @@ radius = 0.4
 neighbor_distance = 1.0
 avoidance_layers = 15
 avoidance_mask = 15
+
+[node name="StealthCast" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.43038702, 0)
+target_position = Vector3(0, 0, 10)
+collision_mask = 2
+debug_shape_custom_color = Color(0, 0.60063446, 0.6904611, 1)
+
+[node name="CombatCast" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.33280647, 0)
+target_position = Vector3(0, 0, 10)
+collision_mask = 2
+debug_shape_custom_color = Color(0.9701783, 0, 0.44033688, 1)
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0.7430426, 0.35953057)
+cast_shadow = 0
+mesh = SubResource("CylinderMesh_cbn6x")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, 0, 0.3613174, 0)
+light_color = Color(1, 0.8627451, 0.61960787, 1)
+light_energy = 10.0
+light_indirect_energy = 0.0
+shadow_enabled = true
+spot_range = 15.0
+spot_attenuation = 0.5
+spot_angle = 33.0
 
 [connection signal="target_reached" from="NavigationAgent3D" to="." method="_on_navigation_agent_3d_target_reached"]
 [connection signal="velocity_computed" from="NavigationAgent3D" to="." method="_on_navigation_agent_3d_velocity_computed"]

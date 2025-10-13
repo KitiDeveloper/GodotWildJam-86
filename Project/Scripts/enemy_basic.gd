@@ -1,12 +1,27 @@
 extends CharacterBody3D
 
+@onready var Player = $"../Player"
+
+var turn_speed = 10
+
 @onready var nav_agent: NavigationAgent3D = $NavigationAgent3D
 @export var SPEED: float = 3.0
 
 var _last_dist := 1e9
 var _stuck_time := 0.0
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
+	var ai_pos = global_position
+	var player_pos = Player.global_position
+	
+	var dirR = player_pos - ai_pos
+	dirR.y = 0
+	
+	var desired_yaw = atan2(dirR.x, dirR.z)
+	var current_yaw = rotation.y
+	
+	rotation.y = lerp_angle(current_yaw, desired_yaw, clamp(turn_speed * _delta, 0.0, 1.0))
+	
 	if nav_agent.is_navigation_finished():
 		velocity = Vector3.ZERO
 		move_and_slide()
@@ -19,12 +34,12 @@ func _physics_process(delta: float) -> void:
 
 	# --- very small unstick check (only adds ~5 lines) ---
 	if dist > _last_dist - 0.01:
-		_stuck_time += delta
+		_stuck_time += _delta
 	else:
 		_stuck_time = 0.0
 	_last_dist = dist
 
-	if dist > 0.01:
+	if dist > 0.1:
 		var move_dir := dir.normalized()
 
 		# if stuck ~0.2s, nudge sideways a bit and force a quick repath
