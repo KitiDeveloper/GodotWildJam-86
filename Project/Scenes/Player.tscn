@@ -23,10 +23,12 @@ script = ExtResource("1_rpqav")
 shape = SubResource("CapsuleShape3D_qbkls")
 
 [node name="DummyVisual" type="MeshInstance3D" parent="."]
+cast_shadow = 0
 mesh = SubResource("CapsuleMesh_rpqav")
 
 [node name="Facing" type="MeshInstance3D" parent="DummyVisual"]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.32791698, -0.4835313)
+cast_shadow = 0
 mesh = SubResource("CylinderMesh_qbkls")
 skeleton = NodePath("../..")
 
@@ -38,9 +40,23 @@ size = 10.0
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.34624994, 0)
-light_color = Color(0.8117647, 1, 0.80784315, 1)
+light_color = Color(0.6862745, 1, 0.6862745, 1)
+light_energy = 0.5
 shadow_enabled = true
 shadow_caster_mask = 4294967293
 distance_fade_enabled = true
 omni_range = 20.0
-omni_attenuation = 0.0
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0.53402114, 0)
+visible = false
+shadow_enabled = true
+spot_range = 7.0
+spot_attenuation = 0.0
+spot_angle = 80.45
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.71498585, 0)
+shadow_enabled = true
+omni_range = 10.0
+omni_attenuation = 1.5
