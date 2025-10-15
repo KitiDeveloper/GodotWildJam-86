@@ -685,7 +685,7 @@ shaded = true
 alpha_cut = 1
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_lslt6")
-animation = &"Idle_NE"
+animation = &"Run_SW"
 speed_scale = 1.5
 
 [node name="FakeShadow" type="Node3D" parent="."]
