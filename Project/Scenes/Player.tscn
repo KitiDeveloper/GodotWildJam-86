@@ -1,6 +1,142 @@
-[gd_scene load_steps=5 format=3 uid="uid://bgejr1a50xrhe"]
+[gd_scene load_steps=146 format=3 uid="uid://bgejr1a50xrhe"]
 
 [ext_resource type="Script" uid="uid://32jyrbu71iwf" path="res://Scripts/player.gd" id="1_rpqav"]
+[ext_resource type="Texture2D" uid="uid://dcqxd0lux7ll3" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/03East/03East0001.png" id="2_iuj5c"]
+[ext_resource type="Texture2D" uid="uid://dij0032cdy573" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/03East/03East0001.png" id="2_megsn"]
+[ext_resource type="Texture2D" uid="uid://y87kuthxd0kv" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/03East/03East0002.png" id="3_c8x12"]
+[ext_resource type="Texture2D" uid="uid://bws7vnbo347k5" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/03East/03East0002.png" id="3_yoq75"]
+[ext_resource type="Texture2D" uid="uid://dmlojgc4kxjyg" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/03East/03East0003.png" id="4_ksbbd"]
+[ext_resource type="Texture2D" uid="uid://bfujlqigeg8yq" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/03East/03East0003.png" id="4_wllee"]
+[ext_resource type="Texture2D" uid="uid://dxxy75pq3mtw4" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/03East/03East0004.png" id="5_glx4g"]
+[ext_resource type="Texture2D" uid="uid://blls2kojpeorx" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/03East/03East0004.png" id="5_gtyc3"]
+[ext_resource type="Texture2D" uid="uid://bx0488s4e5yhh" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/03East/03East0005.png" id="6_al1hg"]
+[ext_resource type="Texture2D" uid="uid://bi4fpfvsmm41a" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/03East/03East0005.png" id="6_miouo"]
+[ext_resource type="Texture2D" uid="uid://dw5vakcks5p32" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/03East/03East0006.png" id="7_8co7j"]
+[ext_resource type="Texture2D" uid="uid://chfnstgoaaywm" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/03East/03East0006.png" id="7_o3h8g"]
+[ext_resource type="Texture2D" uid="uid://b3shdpxy6rfn8" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/03East/03East0007.png" id="8_1e7my"]
+[ext_resource type="Texture2D" uid="uid://cvbkj3lf3xw6" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/03East/03East0007.png" id="8_pm5nx"]
+[ext_resource type="Texture2D" uid="uid://cnbyqkgehuys6" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/03East/03East0008.png" id="9_8cvkf"]
+[ext_resource type="Texture2D" uid="uid://bm73oehmvcg4h" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/03East/03East0008.png" id="9_arntx"]
+[ext_resource type="Texture2D" uid="uid://btkvlnbf8jike" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/01North/01North0001.png" id="10_8ewrp"]
+[ext_resource type="Texture2D" uid="uid://dk5c2qughjgov" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/01North/01North0002.png" id="11_la6u7"]
+[ext_resource type="Texture2D" uid="uid://cclp6wrsyn17f" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/01North/01North0003.png" id="12_qgmyy"]
+[ext_resource type="Texture2D" uid="uid://caeubpnsp5i6g" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/01North/01North0004.png" id="13_n46lj"]
+[ext_resource type="Texture2D" uid="uid://byje8l6co8vta" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/01North/01North0005.png" id="14_36t8t"]
+[ext_resource type="Texture2D" uid="uid://dgmgoxlfbkkr8" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/01North/01North0006.png" id="15_obvcn"]
+[ext_resource type="Texture2D" uid="uid://dscxysjhn8t8u" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/01North/01North0007.png" id="16_j40ng"]
+[ext_resource type="Texture2D" uid="uid://bisbkt507bbqd" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/01North/01North0008.png" id="17_vkbsi"]
+[ext_resource type="Texture2D" uid="uid://br3rixqi2vgbw" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/02NorthEast/02NorthEast0001.png" id="18_4dpua"]
+[ext_resource type="Texture2D" uid="uid://dv3dj6exli46y" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/02NorthEast/02NorthEast0002.png" id="19_etsx3"]
+[ext_resource type="Texture2D" uid="uid://ccndshv607v0q" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/02NorthEast/02NorthEast0003.png" id="20_13o48"]
+[ext_resource type="Texture2D" uid="uid://bfi0j8rayn1xu" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/02NorthEast/02NorthEast0004.png" id="21_85eqs"]
+[ext_resource type="Texture2D" uid="uid://cccrrvkcoe6yj" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/02NorthEast/02NorthEast0005.png" id="22_to82f"]
+[ext_resource type="Texture2D" uid="uid://wrj2ufq170gn" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/02NorthEast/02NorthEast0006.png" id="23_kfumh"]
+[ext_resource type="Texture2D" uid="uid://bt6ex3728vuku" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/02NorthEast/02NorthEast0007.png" id="24_vics4"]
+[ext_resource type="Texture2D" uid="uid://dkcxtgaeg4vmj" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/02NorthEast/02NorthEast0008.png" id="25_grubj"]
+[ext_resource type="Texture2D" uid="uid://c5w4ui26ll8l7" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/08NorthWest/08NorthWest0001.png" id="26_mya8l"]
+[ext_resource type="Texture2D" uid="uid://dvabsihg46mgt" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/08NorthWest/08NorthWest0002.png" id="27_7wpnn"]
+[ext_resource type="Texture2D" uid="uid://dfenrqumep6ff" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/08NorthWest/08NorthWest0003.png" id="28_oo7fw"]
+[ext_resource type="Texture2D" uid="uid://bwhouokxevfs2" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/08NorthWest/08NorthWest0004.png" id="29_fuy4f"]
+[ext_resource type="Texture2D" uid="uid://bew8hkqquymdk" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/08NorthWest/08NorthWest0005.png" id="30_fn77s"]
+[ext_resource type="Texture2D" uid="uid://d3dvv2gu7x2mm" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/08NorthWest/08NorthWest0006.png" id="31_bu8r1"]
+[ext_resource type="Texture2D" uid="uid://bn6je1bo7fy4q" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/08NorthWest/08NorthWest0007.png" id="32_0qaq2"]
+[ext_resource type="Texture2D" uid="uid://bervt313axn5m" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/08NorthWest/08NorthWest0008.png" id="33_6yuet"]
+[ext_resource type="Texture2D" uid="uid://cxuxgjpkwy17b" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/05South/05South0001.png" id="34_xlos2"]
+[ext_resource type="Texture2D" uid="uid://bocdo6k4who5b" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/05South/05South0002.png" id="35_y4ht6"]
+[ext_resource type="Texture2D" uid="uid://u5swjxf45d3y" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/05South/05South0003.png" id="36_2ywcc"]
+[ext_resource type="Texture2D" uid="uid://cjj5mwsr50og8" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/05South/05South0004.png" id="37_kqd6c"]
+[ext_resource type="Texture2D" uid="uid://7rwp7ejlba5e" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/05South/05South0005.png" id="38_u73sp"]
+[ext_resource type="Texture2D" uid="uid://cycjnn7jsw728" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/05South/05South0006.png" id="39_ld01t"]
+[ext_resource type="Texture2D" uid="uid://gk10atk3cfu0" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/05South/05South0007.png" id="40_xgvn0"]
+[ext_resource type="Texture2D" uid="uid://c1sb7sk0c240g" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/05South/05South0008.png" id="41_tveyg"]
+[ext_resource type="Texture2D" uid="uid://k6viua7y8yfc" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/04SouthEast/04SouthEast0001.png" id="42_84ik5"]
+[ext_resource type="Texture2D" uid="uid://byryqk45mtvxu" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/04SouthEast/04SouthEast0002.png" id="43_be3tf"]
+[ext_resource type="Texture2D" uid="uid://b631lav3dij3y" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/04SouthEast/04SouthEast0003.png" id="44_ydqrh"]
+[ext_resource type="Texture2D" uid="uid://dytrixx8n1efm" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/04SouthEast/04SouthEast0004.png" id="45_aoe78"]
+[ext_resource type="Texture2D" uid="uid://dlkq5cei2jk4n" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/04SouthEast/04SouthEast0005.png" id="46_pf86x"]
+[ext_resource type="Texture2D" uid="uid://chikuwh02wkwi" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/04SouthEast/04SouthEast0006.png" id="47_qc03e"]
+[ext_resource type="Texture2D" uid="uid://dvkoj346bl21b" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/04SouthEast/04SouthEast0007.png" id="48_4gxoi"]
+[ext_resource type="Texture2D" uid="uid://2frgukdb78y1" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/04SouthEast/04SouthEast0008.png" id="49_oqt55"]
+[ext_resource type="Texture2D" uid="uid://ba73qjrxd751j" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/06SouthWest/06SouthWest0001.png" id="50_6i3uc"]
+[ext_resource type="Texture2D" uid="uid://bwo3sq0wgyflk" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/06SouthWest/06SouthWest0002.png" id="51_1udfw"]
+[ext_resource type="Texture2D" uid="uid://vmb0mnei8o6g" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/06SouthWest/06SouthWest0003.png" id="52_wb814"]
+[ext_resource type="Texture2D" uid="uid://buti8tjxwirlr" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/06SouthWest/06SouthWest0004.png" id="53_i3h6n"]
+[ext_resource type="Texture2D" uid="uid://dkmpmny3jy06i" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/06SouthWest/06SouthWest0005.png" id="54_ykrp0"]
+[ext_resource type="Texture2D" uid="uid://ds8b2x21bgav5" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/06SouthWest/06SouthWest0006.png" id="55_xheti"]
+[ext_resource type="Texture2D" uid="uid://pu0ixx2vebbg" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/06SouthWest/06SouthWest0007.png" id="56_yg1ah"]
+[ext_resource type="Texture2D" uid="uid://bvm5ha4dlbgeg" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/06SouthWest/06SouthWest0008.png" id="57_v7g38"]
+[ext_resource type="Texture2D" uid="uid://c1v1sluwwqkea" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/07West/07West0001.png" id="58_030x3"]
+[ext_resource type="Texture2D" uid="uid://dm7mpsq347sse" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/07West/07West0002.png" id="59_2xxo3"]
+[ext_resource type="Texture2D" uid="uid://xmh64i8mbqbq" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/07West/07West0003.png" id="60_nq40j"]
+[ext_resource type="Texture2D" uid="uid://dwwfau0qac551" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/07West/07West0004.png" id="61_xqepg"]
+[ext_resource type="Texture2D" uid="uid://br0g72dfu35im" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/07West/07West0005.png" id="62_yp7sk"]
+[ext_resource type="Texture2D" uid="uid://bc3hnf6pnco4" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/07West/07West0006.png" id="63_8ra1r"]
+[ext_resource type="Texture2D" uid="uid://cgeonbnswfwmf" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/07West/07West0007.png" id="64_5if5t"]
+[ext_resource type="Texture2D" uid="uid://doadgnil55ci6" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/07West/07West0008.png" id="65_n85cg"]
+[ext_resource type="Texture2D" uid="uid://ceos3eb4uqsv2" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/01North/01North0001.png" id="74_3dub7"]
+[ext_resource type="Texture2D" uid="uid://b3lh67ko3433l" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/01North/01North0002.png" id="75_ul3n6"]
+[ext_resource type="Texture2D" uid="uid://dbi65u5t78jat" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/01North/01North0003.png" id="76_bw28h"]
+[ext_resource type="Texture2D" uid="uid://cyp6vqdb5djrx" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/01North/01North0004.png" id="77_2gb1b"]
+[ext_resource type="Texture2D" uid="uid://bq64gvr2q5apd" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/01North/01North0005.png" id="78_bk1yq"]
+[ext_resource type="Texture2D" uid="uid://d2j2ultmq16vr" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/01North/01North0006.png" id="79_d5wst"]
+[ext_resource type="Texture2D" uid="uid://q8xprkww3o04" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/01North/01North0007.png" id="80_5rm7i"]
+[ext_resource type="Texture2D" uid="uid://bw4vqk851yove" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/01North/01North0008.png" id="81_tim8o"]
+[ext_resource type="Texture2D" uid="uid://b8yelpgtmnfr4" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/02NorthEast/02NorthEast0001.png" id="82_ncmqh"]
+[ext_resource type="Texture2D" uid="uid://b1qkkvgfl11ui" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/02NorthEast/02NorthEast0002.png" id="83_ahkdy"]
+[ext_resource type="Texture2D" uid="uid://cugqnnexfrnes" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/02NorthEast/02NorthEast0003.png" id="84_e57la"]
+[ext_resource type="Texture2D" uid="uid://buewns7iiuav1" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/02NorthEast/02NorthEast0004.png" id="85_kne7n"]
+[ext_resource type="Texture2D" uid="uid://ci4dwnooc4iw0" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/02NorthEast/02NorthEast0005.png" id="86_g11on"]
+[ext_resource type="Texture2D" uid="uid://b07qiy5jfso7k" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/02NorthEast/02NorthEast0006.png" id="87_2ff68"]
+[ext_resource type="Texture2D" uid="uid://bctuambjhnofb" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/02NorthEast/02NorthEast0007.png" id="88_d2guo"]
+[ext_resource type="Texture2D" uid="uid://bubamm43fybvw" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/02NorthEast/02NorthEast0008.png" id="89_otrix"]
+[ext_resource type="Texture2D" uid="uid://ctjcxtexrapfb" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/08NorthWest/08NorthWest0001.png" id="90_lpsip"]
+[ext_resource type="Texture2D" uid="uid://cf5ukfnbhldua" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/08NorthWest/08NorthWest0002.png" id="91_y6aj1"]
+[ext_resource type="Texture2D" uid="uid://sxah6udscauo" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/08NorthWest/08NorthWest0003.png" id="92_4otj8"]
+[ext_resource type="Texture2D" uid="uid://60pw8ea1eyhx" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/08NorthWest/08NorthWest0004.png" id="93_4vhb2"]
+[ext_resource type="Texture2D" uid="uid://bl2viygr5hfk8" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/08NorthWest/08NorthWest0005.png" id="94_diwyp"]
+[ext_resource type="Texture2D" uid="uid://cfncfoao6yg6i" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/08NorthWest/08NorthWest0006.png" id="95_v7nf6"]
+[ext_resource type="Texture2D" uid="uid://qtqnufo7mev3" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/08NorthWest/08NorthWest0007.png" id="96_q0ss6"]
+[ext_resource type="Texture2D" uid="uid://cewo7u2txas5v" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/08NorthWest/08NorthWest0008.png" id="97_w5g30"]
+[ext_resource type="Texture2D" uid="uid://hs76ejk27emf" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/05South/05South0001.png" id="98_7eliv"]
+[ext_resource type="Texture2D" uid="uid://c47dar3r6ks7f" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/05South/05South0002.png" id="99_rxpai"]
+[ext_resource type="Texture2D" uid="uid://ci3vjyf6qtlsh" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/05South/05South0003.png" id="100_s4jot"]
+[ext_resource type="Texture2D" uid="uid://cduld7q73gmdc" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/05South/05South0004.png" id="101_xvpba"]
+[ext_resource type="Texture2D" uid="uid://da633nkq8hv6c" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/05South/05South0005.png" id="102_6gevd"]
+[ext_resource type="Texture2D" uid="uid://itgukycq5d6c" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/05South/05South0006.png" id="103_gqfox"]
+[ext_resource type="Texture2D" uid="uid://cjdk80g0yhre1" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/05South/05South0007.png" id="104_xvaqa"]
+[ext_resource type="Texture2D" uid="uid://dr5ab7giop220" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/05South/05South0008.png" id="105_7clra"]
+[ext_resource type="Texture2D" uid="uid://dh10l4miw3l0x" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/04SouthEast/04SouthEast0001.png" id="106_vdu2l"]
+[ext_resource type="Texture2D" uid="uid://cftbcwppalmr6" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/04SouthEast/04SouthEast0002.png" id="107_1slgh"]
+[ext_resource type="Texture2D" uid="uid://bu350biskscfk" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/04SouthEast/04SouthEast0003.png" id="108_6folu"]
+[ext_resource type="Texture2D" uid="uid://ddfnnd5qxly27" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/04SouthEast/04SouthEast0004.png" id="109_d5qym"]
+[ext_resource type="Texture2D" uid="uid://d3mll8qsek4qs" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/04SouthEast/04SouthEast0005.png" id="110_n28g5"]
+[ext_resource type="Texture2D" uid="uid://dpnlur6g5mutd" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/04SouthEast/04SouthEast0006.png" id="111_kl8wm"]
+[ext_resource type="Texture2D" uid="uid://biqtcayfw7pc5" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/04SouthEast/04SouthEast0007.png" id="112_8rqq8"]
+[ext_resource type="Texture2D" uid="uid://dlk0wvdoqcofv" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/04SouthEast/04SouthEast0008.png" id="113_ukdju"]
+[ext_resource type="Texture2D" uid="uid://ctubt8ponob5k" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/06SouthWest/06SouthWest0001.png" id="114_p6jc1"]
+[ext_resource type="Texture2D" uid="uid://bcy5x120vqidt" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/06SouthWest/06SouthWest0002.png" id="115_c4hgb"]
+[ext_resource type="Texture2D" uid="uid://drd164lc0ox71" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/06SouthWest/06SouthWest0003.png" id="116_2q01m"]
+[ext_resource type="Texture2D" uid="uid://db3q1fc85e404" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/06SouthWest/06SouthWest0004.png" id="117_ga6on"]
+[ext_resource type="Texture2D" uid="uid://c23uy7q0446hc" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/06SouthWest/06SouthWest0005.png" id="118_875o2"]
+[ext_resource type="Texture2D" uid="uid://b475udcajwt0n" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/06SouthWest/06SouthWest0006.png" id="119_kkcsd"]
+[ext_resource type="Texture2D" uid="uid://rjmurny537s8" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/06SouthWest/06SouthWest0007.png" id="120_pdn4m"]
+[ext_resource type="Texture2D" uid="uid://clonbx8263lm3" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/06SouthWest/06SouthWest0008.png" id="121_wnhnj"]
+[ext_resource type="Texture2D" uid="uid://diivfbnr5bxyo" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/07West/07West0001.png" id="122_8eiaa"]
+[ext_resource type="Texture2D" uid="uid://d0qntht2cr0ij" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/07West/07West0002.png" id="123_spx3j"]
+[ext_resource type="Texture2D" uid="uid://da21hwln30owi" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/07West/07West0003.png" id="124_vcvpg"]
+[ext_resource type="Texture2D" uid="uid://dfyepbty2ot6w" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/07West/07West0004.png" id="125_r2g36"]
+[ext_resource type="Texture2D" uid="uid://yucjcxuyl8k7" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/07West/07West0005.png" id="126_e1gv0"]
+[ext_resource type="Texture2D" uid="uid://f26lx7rtmy17" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/07West/07West0006.png" id="127_oqbug"]
+[ext_resource type="Texture2D" uid="uid://bq25vq2uf2ews" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/07West/07West0007.png" id="128_u6qtc"]
+[ext_resource type="Texture2D" uid="uid://chjkbatk3082s" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/07West/07West0008.png" id="129_memra"]
+[ext_resource type="Texture2D" uid="uid://b8fyb1jobigot" path="res://Textures/CharacterShadowBlackHalf.png" id="130_wllee"]
+[ext_resource type="Texture2D" uid="uid://valjjeaq84p3" path="res://Textures/CharacterShadowBlack3Quarters.png" id="131_gtyc3"]
+[ext_resource type="Texture2D" uid="uid://cbxlhnoo3xk7s" path="res://Textures/MuzzleFlash/MuzzleFlash_000.png" id="132_8ewrp"]
+[ext_resource type="Texture2D" uid="uid://tvhjsrquyrsf" path="res://Textures/MuzzleFlash/MuzzleFlash_002.png" id="133_la6u7"]
+[ext_resource type="Texture2D" uid="uid://vdkl8dqty554" path="res://Textures/MuzzleFlash/MuzzleFlash_004.png" id="134_qgmyy"]
+[ext_resource type="Texture2D" uid="uid://bu5at0vpuairg" path="res://Textures/MuzzleFlash/MuzzleFlash_006.png" id="135_n46lj"]
+[ext_resource type="Texture2D" uid="uid://b354xl6xivylj" path="res://Textures/MuzzleFlash/MuzzleFlash_008.png" id="136_36t8t"]
+[ext_resource type="Texture2D" uid="uid://ddekydo2uyjae" path="res://Textures/MuzzleFlash/MuzzleFlash_010.png" id="137_obvcn"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_qbkls"]
 radius = 0.4
@@ -15,6 +151,515 @@ top_radius = 0.2
 bottom_radius = 0.2
 height = 1.5
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_lslt6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_iuj5c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_c8x12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_wllee")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_gtyc3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_al1hg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_8co7j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_pm5nx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_8cvkf")
+}],
+"loop": true,
+"name": &"Idle_E",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_8ewrp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_la6u7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_qgmyy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_n46lj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_36t8t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_obvcn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_j40ng")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_vkbsi")
+}],
+"loop": true,
+"name": &"Idle_N",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_4dpua")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_etsx3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_13o48")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_85eqs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_to82f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_kfumh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_vics4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_grubj")
+}],
+"loop": true,
+"name": &"Idle_NE",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_mya8l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_7wpnn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_oo7fw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_fuy4f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_fn77s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_bu8r1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_0qaq2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_6yuet")
+}],
+"loop": true,
+"name": &"Idle_NW",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("34_xlos2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_y4ht6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_2ywcc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_kqd6c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_u73sp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_ld01t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_xgvn0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_tveyg")
+}],
+"loop": true,
+"name": &"Idle_S",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("42_84ik5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_be3tf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_ydqrh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_aoe78")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_pf86x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_qc03e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_4gxoi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_oqt55")
+}],
+"loop": true,
+"name": &"Idle_SE",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("50_6i3uc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_1udfw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_wb814")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_i3h6n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_ykrp0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_xheti")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_yg1ah")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_v7g38")
+}],
+"loop": true,
+"name": &"Idle_SW",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("58_030x3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_2xxo3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_nq40j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_xqepg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_yp7sk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_8ra1r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_5if5t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_n85cg")
+}],
+"loop": true,
+"name": &"Idle_W",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_megsn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_yoq75")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ksbbd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_glx4g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_miouo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_o3h8g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_1e7my")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_arntx")
+}],
+"loop": true,
+"name": &"Run_E",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("74_3dub7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_ul3n6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_bw28h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_2gb1b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_bk1yq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_d5wst")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_5rm7i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_tim8o")
+}],
+"loop": true,
+"name": &"Run_N",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("82_ncmqh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_ahkdy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_e57la")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_kne7n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_g11on")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_2ff68")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_d2guo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_otrix")
+}],
+"loop": true,
+"name": &"Run_NE",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("90_lpsip")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_y6aj1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_4otj8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_4vhb2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_diwyp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_v7nf6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_q0ss6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_w5g30")
+}],
+"loop": true,
+"name": &"Run_NW",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("98_7eliv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_rxpai")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_s4jot")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_xvpba")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_6gevd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_gqfox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_xvaqa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_7clra")
+}],
+"loop": true,
+"name": &"Run_S",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("106_vdu2l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_1slgh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_6folu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_d5qym")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_n28g5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_kl8wm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_8rqq8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113_ukdju")
+}],
+"loop": true,
+"name": &"Run_SE",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("114_p6jc1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_c4hgb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116_2q01m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_ga6on")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118_875o2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119_kkcsd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_pdn4m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_wnhnj")
+}],
+"loop": true,
+"name": &"Run_SW",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("122_8eiaa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_spx3j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_vcvpg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125_r2g36")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126_e1gv0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127_oqbug")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128_u6qtc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129_memra")
+}],
+"loop": true,
+"name": &"Run_W",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_j40ng"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("132_8ewrp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133_la6u7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("134_qgmyy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135_n46lj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("136_36t8t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("137_obvcn")
+}],
+"loop": false,
+"name": &"default",
+"speed": 80.0
+}]
+
+[sub_resource type="SphereMesh" id="SphereMesh_wllee"]
+radius = 0.2
+height = 0.2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gtyc3"]
+albedo_color = Color(0.41598046, 0.41598043, 0.4159804, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_al1hg"]
+material = SubResource("StandardMaterial3D_gtyc3")
+size = Vector3(10, 0.14, 10)
+
 [node name="Player" type="CharacterBody3D"]
 collision_layer = 2
 script = ExtResource("1_rpqav")
@@ -23,6 +668,7 @@ script = ExtResource("1_rpqav")
 shape = SubResource("CapsuleShape3D_qbkls")
 
 [node name="DummyVisual" type="MeshInstance3D" parent="."]
+visible = false
 cast_shadow = 0
 mesh = SubResource("CapsuleMesh_rpqav")
 
@@ -33,30 +679,195 @@ mesh = SubResource("CylinderMesh_qbkls")
 skeleton = NodePath("../..")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.6647741, 0.74704444, 0, -0.74704444, 0.6647741, 0, 8.636998, 5.348766)
+transform = Transform3D(1, 0, 0, 0, 0.78352004, 0.6213667, 0, -0.6213667, 0.78352004, 0, 6.636998, 5.348766)
 current = true
 fov = 49.242764
 size = 10.0
 
-[node name="OmniLight3D" type="OmniLight3D" parent="."]
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+layers = 2
+billboard = 1
+shaded = true
+alpha_cut = 1
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_lslt6")
+animation = &"Idle_NW"
+speed_scale = 1.5
+
+[node name="FakeShadow" type="Node3D" parent="."]
+
+[node name="Sprite3D" type="Sprite3D" parent="FakeShadow"]
+transform = Transform3D(6, 0, 0, 0, -2.6226832e-07, 6, 0, -6, -2.6226832e-07, 0, -0.8415153, 0)
+texture_filter = 0
+texture = ExtResource("130_wllee")
+
+[node name="Sprite3D3" type="Sprite3D" parent="FakeShadow/Sprite3D"]
+transform = Transform3D(0.8333334, 0, 0, 0, -0.8333334, 7.2852316e-08, 0, -7.2852316e-08, -0.8333334, 0, 3.5318415e-12, -8.0779195e-05)
+texture_filter = 0
+texture = ExtResource("130_wllee")
+
+[node name="Sprite3D2" type="Sprite3D" parent="FakeShadow/Sprite3D"]
+transform = Transform3D(0.6666667, 0, 0, 0, 0.6666667, 1.7763568e-15, 0, -1.7763568e-15, 0.6666667, 0, 0, 0)
+texture_filter = 0
+texture = ExtResource("131_gtyc3")
+
+[node name="Lighting" type="Node3D" parent="."]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lighting"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.34624994, 0)
 light_color = Color(0.6862745, 1, 0.6862745, 1)
 light_energy = 0.5
+light_cull_mask = 4294967293
 shadow_enabled = true
 shadow_caster_mask = 4294967293
 distance_fade_enabled = true
 omni_range = 20.0
 
-[node name="SpotLight3D" type="SpotLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0.53402114, 0)
-visible = false
-shadow_enabled = true
-spot_range = 7.0
-spot_attenuation = 0.0
-spot_angle = 80.45
-
-[node name="OmniLight3D2" type="OmniLight3D" parent="."]
+[node name="OmniLight3D2" type="OmniLight3D" parent="Lighting"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.71498585, 0)
+light_cull_mask = 4294967293
 shadow_enabled = true
+shadow_caster_mask = 4294967293
 omni_range = 10.0
 omni_attenuation = 1.5
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Lighting"]
+transform = Transform3D(1, 0, 0, 0, 0.24530742, 0.96944535, 0, -0.96944535, 0.24530742, 0, 2.9099576, 0.6245708)
+light_energy = 2.0
+light_cull_mask = 4294966274
+spot_range = 3.76
+spot_attenuation = 0.0
+spot_angle = 18.66
+
+[node name="MuzzleFX" type="Node3D" parent="."]
+
+[node name="MuzzleAnimN" type="AnimatedSprite3D" parent="MuzzleFX"]
+transform = Transform3D(3, 0, 0, 0, -1.3113416e-07, 3, 0, -3, -1.3113416e-07, 0.13, 0.199, -1.856)
+visible = false
+sprite_frames = SubResource("SpriteFrames_j40ng")
+frame = 5
+frame_progress = 1.0
+
+[node name="MuzzleAnimNE" type="AnimatedSprite3D" parent="MuzzleFX"]
+transform = Transform3D(2.1213202, 2.1213202, 9.2725855e-08, 0, -1.3113416e-07, 3, 2.1213202, -2.1213202, -9.2725855e-08, 1.41, 0.199, -1.326)
+visible = false
+sprite_frames = SubResource("SpriteFrames_j40ng")
+frame = 5
+frame_progress = 1.0
+
+[node name="MuzzleAnimE" type="AnimatedSprite3D" parent="MuzzleFX"]
+transform = Transform3D(-1.3113416e-07, 2.9999998, 1.3113416e-07, 0, -1.3113416e-07, 3, 2.9999998, 1.3113416e-07, 5.7320566e-15, 2.085, 0.199, -0.201)
+visible = false
+sprite_frames = SubResource("SpriteFrames_j40ng")
+frame = 5
+frame_progress = 1.0
+
+[node name="MuzzleAnimSE" type="AnimatedSprite3D" parent="MuzzleFX"]
+transform = Transform3D(-2.1213202, 2.1213202, 9.2725855e-08, 0, -1.3113416e-07, 3, 2.1213202, 2.1213202, 9.2725855e-08, 1.51, 0.199, 1.054)
+visible = false
+sprite_frames = SubResource("SpriteFrames_j40ng")
+frame = 5
+frame_progress = 1.0
+
+[node name="MuzzleAnimS" type="AnimatedSprite3D" parent="MuzzleFX"]
+transform = Transform3D(-2.9999998, -2.6226832e-07, -1.1464113e-14, 0, -1.3113416e-07, 3, -2.6226832e-07, 2.9999998, 1.3113416e-07, -0.205, 0.199, 1.579)
+visible = false
+sprite_frames = SubResource("SpriteFrames_j40ng")
+frame = 5
+frame_progress = 1.0
+
+[node name="MuzzleAnimSW" type="AnimatedSprite3D" parent="MuzzleFX"]
+transform = Transform3D(-2.1213202, -2.1213202, -9.2725855e-08, 0, -1.3113416e-07, 3, -2.1213202, 2.1213202, 9.2725855e-08, -1.74, 0.199, 0.814)
+visible = false
+sprite_frames = SubResource("SpriteFrames_j40ng")
+frame = 5
+frame_progress = 1.0
+
+[node name="MuzzleAnimW" type="AnimatedSprite3D" parent="MuzzleFX"]
+transform = Transform3D(-1.3113416e-07, -2.9999998, -1.3113416e-07, 0, -1.3113416e-07, 3, -2.9999998, 1.3113416e-07, 5.7320566e-15, -2.09, 0.199, -0.416)
+visible = false
+sprite_frames = SubResource("SpriteFrames_j40ng")
+frame = 5
+frame_progress = 1.0
+
+[node name="MuzzleAnimNW" type="AnimatedSprite3D" parent="MuzzleFX"]
+transform = Transform3D(2.1213202, -2.1213202, -9.2725855e-08, 0, -1.3113416e-07, 3, -2.1213202, -2.1213202, -9.2725855e-08, -1.315, 0.199, -1.506)
+visible = false
+sprite_frames = SubResource("SpriteFrames_j40ng")
+frame = 5
+frame_progress = 1.0
+
+[node name="MuzzleFlashN" type="OmniLight3D" parent="MuzzleFX"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.175, 0.199, -1.526)
+visible = false
+light_color = Color(1, 0.5529412, 0.09019608, 1)
+light_energy = 5.0
+shadow_enabled = true
+omni_range = 10.0
+
+[node name="MuzzleFlashNE" type="OmniLight3D" parent="MuzzleFX"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.28, 0.199, -1.066)
+visible = false
+light_color = Color(1, 0.5529412, 0.09019608, 1)
+light_energy = 5.0
+shadow_enabled = true
+omni_range = 10.0
+
+[node name="MuzzleFlashE" type="OmniLight3D" parent="MuzzleFX"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.885, 0.199, -0.201)
+visible = false
+light_color = Color(1, 0.5529412, 0.09019608, 1)
+light_energy = 5.0
+shadow_enabled = true
+omni_range = 10.0
+
+[node name="MuzzleFlashSE" type="OmniLight3D" parent="MuzzleFX"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0.199, 0.824)
+visible = false
+light_color = Color(1, 0.5529412, 0.09019608, 1)
+light_energy = 5.0
+shadow_enabled = true
+omni_range = 10.0
+
+[node name="MuzzleFlashS" type="OmniLight3D" parent="MuzzleFX"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.205, 0.199, 1.199)
+visible = false
+light_color = Color(1, 0.5529412, 0.09019608, 1)
+light_energy = 5.0
+shadow_enabled = true
+omni_range = 10.0
+
+[node name="MuzzleFlashSW" type="OmniLight3D" parent="MuzzleFX"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.575, 0.199, 0.574)
+visible = false
+light_color = Color(1, 0.5529412, 0.09019608, 1)
+light_energy = 5.0
+shadow_enabled = true
+omni_range = 10.0
+
+[node name="MuzzleFlashW" type="OmniLight3D" parent="MuzzleFX"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.775, 0.199, -0.416)
+visible = false
+light_color = Color(1, 0.5529412, 0.09019608, 1)
+light_energy = 5.0
+shadow_enabled = true
+omni_range = 10.0
+
+[node name="MuzzleFlashNW" type="OmniLight3D" parent="MuzzleFX"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.04, 0.199, -1.126)
+visible = false
+light_color = Color(1, 0.5529412, 0.09019608, 1)
+light_energy = 5.0
+shadow_enabled = true
+omni_range = 10.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="MuzzleFX"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.04, 0.199, -1.126)
+visible = false
+mesh = SubResource("SphereMesh_wllee")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.92, 0)
+visible = false
+mesh = SubResource("BoxMesh_al1hg")
