@@ -4,6 +4,18 @@ var speed = 5.0
 var current_dir = "South"
 var is_running = false
 
+@onready var cam: Camera3D = $Camera3D
+
+var cam_base_rot: Vector3
+var cam_base_pos: Vector3
+
+
+# shake state
+var shake_t := 0.0
+var shake_dur := 0.0
+var shake_amp_pos := 0.0      # in meters
+var shake_amp_rot := 0.0      # in radians
+
 @onready var muzzle_flashes = [
 	$MuzzleFX/MuzzleFlashN,
 	$MuzzleFX/MuzzleFlashNE,
@@ -26,15 +38,17 @@ var is_running = false
 	$MuzzleFX/MuzzleAnimNW
 ]
 
+func _ready():
+	cam_base_rot = cam.rotation
+	cam_base_pos = cam.position
+
 func _physics_process(delta):
+	
 	player_movement(delta)
+	rotate_player()
 	play_anim()
 	muzzle_fx()
 	
-	if Input.is_action_just_pressed("Rotate Camera Left"):
-		rotation_degrees.y += 90  # snap the root (and all children) to 90°
-	elif Input.is_action_just_pressed("Rotate Camera Right"):
-		rotation_degrees.y += -90  # snap the root (and all children) to 90°
 
 func player_movement(_delta):
 	
@@ -83,14 +97,64 @@ func player_movement(_delta):
 		velocity.x = 0
 		velocity.z = 0
 		
+	var right   := global_transform.basis.x
+	var forward := global_transform.basis.z   # flipped direction
+
+	right.y = 0
+	forward.y = 0
+	right = right.normalized()
+	forward = forward.normalized()
+
+	var world := right * velocity.x + forward * velocity.z
+	velocity.x = world.x
+	velocity.z = world.z
+	velocity.y = 0
 	
 	global_position.y = 1.4
 	move_and_slide()
 	global_position.y = 1.4
 	
+func rotate_player():
+	if Input.is_action_just_pressed("Rotate Camera Left"):
+		rotation_degrees.y += 90  # snap the root (and all children) to 90°
+		if current_dir == "North":
+			current_dir = "East"
+		elif current_dir == "NorthWest":
+			current_dir = "NorthEast"
+		elif current_dir == "West":
+			current_dir = "North"
+		elif current_dir == "SouthWest":
+			current_dir = "NorthWest"
+		elif current_dir == "South":
+			current_dir = "West"
+		elif current_dir == "SouthEast":
+			current_dir = "SouthWest"
+		elif current_dir == "East":
+			current_dir = "South"
+		elif current_dir == "NorthEast":
+			current_dir = "SouthEast"
+	elif Input.is_action_just_pressed("Rotate Camera Right"):
+		rotation_degrees.y -= 90  # snap the root (and all children) to -90°
+		if current_dir == "North":
+			current_dir = "West"
+		elif current_dir == "NorthEast":
+			current_dir = "NorthWest"
+		elif current_dir == "East":
+			current_dir = "North"
+		elif current_dir == "SouthEast":
+			current_dir = "NorthEast"
+		elif current_dir == "South":
+			current_dir = "East"
+		elif current_dir == "SouthWest":
+			current_dir = "SouthEast"
+		elif current_dir == "West":
+			current_dir = "South"
+		elif current_dir == "NorthWest":
+			current_dir = "SouthWest"
 
 func muzzle_fx():
 	if Input.is_action_just_pressed("Fire"):
+		camera_kick(randf_range(-1, 1), 1, randf_range(-1, 1), 0.08)
 		match current_dir:
 			"North":
 				muzzle_flashes[0].visible = true
@@ -148,7 +212,6 @@ func muzzle_fx():
 				await get_tree().create_timer(0.1).timeout
 				muzzle_flashes[7].visible = false
 				muzzle_anim[7].visible = false
-				
 
 func play_anim():
 	var anim = $AnimatedSprite3D
@@ -195,3 +258,13 @@ func play_anim():
 			anim.play("Idle_NW")
 	else:
 		return
+
+func camera_kick(yaw_deg: float = 0.0, pitch_deg: float = 2.5, roll_deg: float = 0.0, duration: float = 0.10):
+	var target := cam_base_rot + Vector3(
+		deg_to_rad(pitch_deg),
+		deg_to_rad(yaw_deg),
+		deg_to_rad(roll_deg)
+	)
+	var tw = create_tween()
+	tw.tween_property(cam, "rotation", target, duration * 0.35).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
+	tw.tween_property(cam, "rotation", cam_base_rot, duration * 0.65).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN)
