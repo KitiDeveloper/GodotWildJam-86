@@ -801,7 +801,7 @@ frame_progress = 1.0
 [node name="MuzzleFlashN" type="OmniLight3D" parent="MuzzleFX"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.175, 0.199, -1.526)
 visible = false
-light_color = Color(1, 0.5529412, 0.09019608, 1)
+light_color = Color(1, 0.6739451, 0.4211194, 1)
 light_energy = 5.0
 shadow_enabled = true
 omni_range = 10.0
@@ -809,7 +809,7 @@ omni_range = 10.0
 [node name="MuzzleFlashNE" type="OmniLight3D" parent="MuzzleFX"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.28, 0.199, -1.066)
 visible = false
-light_color = Color(1, 0.5529412, 0.09019608, 1)
+light_color = Color(1, 0.6739451, 0.4211194, 1)
 light_energy = 5.0
 shadow_enabled = true
 omni_range = 10.0
@@ -817,7 +817,7 @@ omni_range = 10.0
 [node name="MuzzleFlashE" type="OmniLight3D" parent="MuzzleFX"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.885, 0.199, -0.201)
 visible = false
-light_color = Color(1, 0.5529412, 0.09019608, 1)
+light_color = Color(1, 0.6739451, 0.4211194, 1)
 light_energy = 5.0
 shadow_enabled = true
 omni_range = 10.0
@@ -825,7 +825,7 @@ omni_range = 10.0
 [node name="MuzzleFlashSE" type="OmniLight3D" parent="MuzzleFX"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0.199, 0.824)
 visible = false
-light_color = Color(1, 0.5529412, 0.09019608, 1)
+light_color = Color(1, 0.6739451, 0.4211194, 1)
 light_energy = 5.0
 shadow_enabled = true
 omni_range = 10.0
@@ -833,7 +833,7 @@ omni_range = 10.0
 [node name="MuzzleFlashS" type="OmniLight3D" parent="MuzzleFX"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.205, 0.199, 1.199)
 visible = false
-light_color = Color(1, 0.5529412, 0.09019608, 1)
+light_color = Color(1, 0.6739451, 0.4211194, 1)
 light_energy = 5.0
 shadow_enabled = true
 omni_range = 10.0
@@ -841,7 +841,7 @@ omni_range = 10.0
 [node name="MuzzleFlashSW" type="OmniLight3D" parent="MuzzleFX"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.575, 0.199, 0.574)
 visible = false
-light_color = Color(1, 0.5529412, 0.09019608, 1)
+light_color = Color(1, 0.6739451, 0.4211194, 1)
 light_energy = 5.0
 shadow_enabled = true
 omni_range = 10.0
@@ -849,7 +849,7 @@ omni_range = 10.0
 [node name="MuzzleFlashW" type="OmniLight3D" parent="MuzzleFX"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.775, 0.199, -0.416)
 visible = false
-light_color = Color(1, 0.5529412, 0.09019608, 1)
+light_color = Color(1, 0.6739451, 0.4211194, 1)
 light_energy = 5.0
 shadow_enabled = true
 omni_range = 10.0
@@ -857,7 +857,7 @@ omni_range = 10.0
 [node name="MuzzleFlashNW" type="OmniLight3D" parent="MuzzleFX"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.04, 0.199, -1.126)
 visible = false
-light_color = Color(1, 0.5529412, 0.09019608, 1)
+light_color = Color(1, 0.6739451, 0.4211194, 1)
 light_energy = 5.0
 shadow_enabled = true
 omni_range = 10.0

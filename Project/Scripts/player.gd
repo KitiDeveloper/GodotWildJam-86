@@ -4,6 +4,8 @@ var speed = 5.0
 var current_dir = "South"
 var is_running = false
 
+#--------------------------------------------
+#camera stuff
 @onready var cam: Camera3D = $Camera3D
 
 var cam_base_rot: Vector3
@@ -15,7 +17,8 @@ var shake_t := 0.0
 var shake_dur := 0.0
 var shake_amp_pos := 0.0      # in meters
 var shake_amp_rot := 0.0      # in radians
-
+#--------------------------------------------
+#muzzle juice
 @onready var muzzle_flashes = [
 	$MuzzleFX/MuzzleFlashN,
 	$MuzzleFX/MuzzleFlashNE,
@@ -37,10 +40,32 @@ var shake_amp_rot := 0.0      # in radians
 	$MuzzleFX/MuzzleAnimW,
 	$MuzzleFX/MuzzleAnimNW
 ]
+#--------------------------------------------
+
+@export var world_env_path: WorldEnvironment
+@onready var env: Environment = world_env_path.environment
+
+var base_sat := 1.0
+var base_brightness := 0.0
+var base_glow := 0.0
 
 func _ready():
+	#--------------------------------------------
+	#for camera
 	cam_base_rot = cam.rotation
 	cam_base_pos = cam.position
+	#--------------------------------------------
+	world_env_path.environment = world_env_path.environment.duplicate()
+	env = world_env_path.environment
+
+	# Enable the features
+	env.adjustment_enabled = true
+	env.glow_enabled = true
+	
+	# Cache baselines
+	base_sat = env.adjustment_saturation
+	base_brightness = env.adjustment_brightness
+	base_glow = env.glow_intensity
 
 func _physics_process(delta):
 	
@@ -155,6 +180,7 @@ func rotate_player():
 func muzzle_fx():
 	if Input.is_action_just_pressed("Fire"):
 		camera_kick(randf_range(-1, 1), 1, randf_range(-1, 1), 0.08)
+		env_kick()
 		match current_dir:
 			"North":
 				muzzle_flashes[0].visible = true
@@ -268,3 +294,10 @@ func camera_kick(yaw_deg: float = 0.0, pitch_deg: float = 2.5, roll_deg: float =
 	var tw = create_tween()
 	tw.tween_property(cam, "rotation", target, duration * 0.35).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
 	tw.tween_property(cam, "rotation", cam_base_rot, duration * 0.65).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN)
+
+func env_kick(sat_add := 1.0, glow_add := 50.0, duration := 0.20):
+	var tw = create_tween()
+	tw.tween_property(env, "adjustment_saturation", base_sat + sat_add, duration * 0.35).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
+	tw.parallel().tween_property(env, "glow_intensity", base_glow + glow_add, duration * 0.35).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
+	tw.tween_property(env, "adjustment_saturation", base_sat, duration * 0.65).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN)
+	tw.parallel().tween_property(env, "glow_intensity", base_glow, duration * 0.65).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN)

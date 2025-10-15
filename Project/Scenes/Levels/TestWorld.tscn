@@ -65,8 +65,9 @@ script = ExtResource("1_g1jjb")
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_rn6dn")
 
-[node name="Player" parent="." instance=ExtResource("4_nw68e")]
+[node name="Player" parent="." node_paths=PackedStringArray("world_env_path") instance=ExtResource("4_nw68e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.352016, 1.5208979, -2.030991)
+world_env_path = NodePath("../WorldEnvironment")
 
 [node name="RotateCoolDown" type="Timer" parent="."]
 wait_time = 0.3
