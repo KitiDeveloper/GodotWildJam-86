@@ -1,4 +1,4 @@
-[gd_scene load_steps=146 format=3 uid="uid://bgejr1a50xrhe"]
+[gd_scene load_steps=143 format=3 uid="uid://bgejr1a50xrhe"]
 
 [ext_resource type="Script" uid="uid://32jyrbu71iwf" path="res://Scripts/player.gd" id="1_rpqav"]
 [ext_resource type="Texture2D" uid="uid://dcqxd0lux7ll3" path="res://SpriteAnimations/Player/GrandmaIdleWithGun/03East/03East0001.png" id="2_iuj5c"]
@@ -130,7 +130,6 @@
 [ext_resource type="Texture2D" uid="uid://bq25vq2uf2ews" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/07West/07West0007.png" id="128_u6qtc"]
 [ext_resource type="Texture2D" uid="uid://chjkbatk3082s" path="res://SpriteAnimations/Player/GrandmaRunningWithGun/07West/07West0008.png" id="129_memra"]
 [ext_resource type="Texture2D" uid="uid://b8fyb1jobigot" path="res://Textures/CharacterShadowBlackHalf.png" id="130_wllee"]
-[ext_resource type="Texture2D" uid="uid://valjjeaq84p3" path="res://Textures/CharacterShadowBlack3Quarters.png" id="131_gtyc3"]
 [ext_resource type="Texture2D" uid="uid://cbxlhnoo3xk7s" path="res://Textures/MuzzleFlash/MuzzleFlash_000.png" id="132_8ewrp"]
 [ext_resource type="Texture2D" uid="uid://tvhjsrquyrsf" path="res://Textures/MuzzleFlash/MuzzleFlash_002.png" id="133_la6u7"]
 [ext_resource type="Texture2D" uid="uid://vdkl8dqty554" path="res://Textures/MuzzleFlash/MuzzleFlash_004.png" id="134_qgmyy"]
@@ -649,16 +648,10 @@ animations = [{
 "speed": 80.0
 }]
 
-[sub_resource type="SphereMesh" id="SphereMesh_wllee"]
-radius = 0.2
-height = 0.2
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gtyc3"]
-albedo_color = Color(0.41598046, 0.41598043, 0.4159804, 1)
-
-[sub_resource type="BoxMesh" id="BoxMesh_al1hg"]
-material = SubResource("StandardMaterial3D_gtyc3")
-size = Vector3(10, 0.14, 10)
+[sub_resource type="CylinderMesh" id="CylinderMesh_8ewrp"]
+top_radius = 0.05
+bottom_radius = 0.01
+height = 4.0
 
 [node name="Player" type="CharacterBody3D"]
 collision_layer = 2
@@ -692,7 +685,7 @@ shaded = true
 alpha_cut = 1
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_lslt6")
-animation = &"Idle_NW"
+animation = &"Idle_NE"
 speed_scale = 1.5
 
 [node name="FakeShadow" type="Node3D" parent="."]
@@ -710,7 +703,7 @@ texture = ExtResource("130_wllee")
 [node name="Sprite3D2" type="Sprite3D" parent="FakeShadow/Sprite3D"]
 transform = Transform3D(0.6666667, 0, 0, 0, 0.6666667, 1.7763568e-15, 0, -1.7763568e-15, 0.6666667, 0, 0, 0)
 texture_filter = 0
-texture = ExtResource("131_gtyc3")
+texture = ExtResource("130_wllee")
 
 [node name="Lighting" type="Node3D" parent="."]
 
@@ -724,8 +717,9 @@ shadow_caster_mask = 4294967293
 distance_fade_enabled = true
 omni_range = 20.0
 
-[node name="OmniLight3D2" type="OmniLight3D" parent="Lighting"]
+[node name="OmniLight3D2" type="OmniLight3D" parent="Lighting" groups=["player"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.71498585, 0)
+light_energy = 0.5
 light_cull_mask = 4294967293
 shadow_enabled = true
 shadow_caster_mask = 4294967293
@@ -862,12 +856,85 @@ light_energy = 5.0
 shadow_enabled = true
 omni_range = 10.0
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="MuzzleFX"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.04, 0.199, -1.126)
+[node name="GunRayCasts" type="Node3D" parent="."]
 visible = false
-mesh = SubResource("SphereMesh_wllee")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.92, 0)
-visible = false
-mesh = SubResource("BoxMesh_al1hg")
+[node name="RayCastN" type="RayCast3D" parent="GunRayCasts"]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.175, 0.31, 0)
+target_position = Vector3(-20, 0, 0)
+collision_mask = 5
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="GunRayCasts/RayCastN"]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -2, 0, 0)
+mesh = SubResource("CylinderMesh_8ewrp")
+skeleton = NodePath("../../..")
+
+[node name="RayCastNE" type="RayCast3D" parent="GunRayCasts"]
+transform = Transform3D(-0.80901706, 0, -0.5877852, 0, 1, 0, 0.5877852, 0, -0.80901706, 0, 0.31, -0.07)
+target_position = Vector3(-20, 0, 0)
+collision_mask = 5
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="GunRayCasts/RayCastNE"]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -2, 0, 0)
+mesh = SubResource("CylinderMesh_8ewrp")
+skeleton = NodePath("../../..")
+
+[node name="RayCastE" type="RayCast3D" parent="GunRayCasts"]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0.31, -0.09)
+target_position = Vector3(-20, 0, 0)
+collision_mask = 5
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="GunRayCasts/RayCastE"]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -2, 0, 0)
+mesh = SubResource("CylinderMesh_8ewrp")
+skeleton = NodePath("../../..")
+
+[node name="RayCastSE" type="RayCast3D" parent="GunRayCasts"]
+transform = Transform3D(-0.80901706, 0, 0.5877852, 0, 1, 0, -0.5877852, 0, -0.80901706, -0.075, 0.31, 0)
+target_position = Vector3(-20, 0, 0)
+collision_mask = 5
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="GunRayCasts/RayCastSE"]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -2, 0, 0)
+mesh = SubResource("CylinderMesh_8ewrp")
+skeleton = NodePath("../../..")
+
+[node name="RayCastS" type="RayCast3D" parent="GunRayCasts"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.2, 0.31, 0)
+target_position = Vector3(-20, 0, 0)
+collision_mask = 5
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="GunRayCasts/RayCastS"]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -2, 0, 0)
+mesh = SubResource("CylinderMesh_8ewrp")
+skeleton = NodePath("../../..")
+
+[node name="RayCastSW" type="RayCast3D" parent="GunRayCasts"]
+transform = Transform3D(0.809017, 0, 0.58778524, 0, 1, 0, -0.58778524, 0, 0.809017, -0.23, 0.31, -0.2)
+target_position = Vector3(-20, 0, 0)
+collision_mask = 5
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="GunRayCasts/RayCastSW"]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -2, 0, 0)
+mesh = SubResource("CylinderMesh_8ewrp")
+skeleton = NodePath("../../..")
+
+[node name="RayCastW" type="RayCast3D" parent="GunRayCasts"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.31, -0.37)
+target_position = Vector3(-20, 0, 0)
+collision_mask = 5
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="GunRayCasts/RayCastW"]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -2, 0, 0)
+mesh = SubResource("CylinderMesh_8ewrp")
+skeleton = NodePath("../../..")
+
+[node name="RayCastNW" type="RayCast3D" parent="GunRayCasts"]
+transform = Transform3D(0.809017, 0, -0.58778524, 0, 1, 0, 0.58778524, 0, 0.809017, 0.15, 0.31, -0.33)
+target_position = Vector3(-20, 0, 0)
+collision_mask = 5
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="GunRayCasts/RayCastNW"]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -2, 0, 0)
+mesh = SubResource("CylinderMesh_8ewrp")
+skeleton = NodePath("../../..")

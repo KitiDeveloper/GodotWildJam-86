@@ -12,7 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://7jeoiu3lktxg" path="res://3D/MediumProps/SquatRack/squat_rack.tscn" id="9_ri28s"]
 [ext_resource type="PackedScene" uid="uid://cbvtjcmltflym" path="res://3D/LargeProps/WeightBench/weight_bench.tscn" id="10_7pons"]
 [ext_resource type="PackedScene" uid="uid://bqmanykblb6g1" path="res://3D/LargeProps/RadioPrinter/radio_printer.tscn" id="11_qltjj"]
-[ext_resource type="PackedScene" uid="uid://cy1gr62iyyc4q" path="res://Scenes/enemy_basic.tscn" id="13_e07wo"]
+[ext_resource type="PackedScene" uid="uid://b2c8knibkoso" path="res://Scenes/ZombieSoldier.tscn" id="13_e07wo"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_nw68e"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -1201,11 +1201,6 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -11.
 [node name="RadioPrinter8" parent="NavigationRegion3D/LargeProps/RadioPrinters" instance=ExtResource("11_qltjj")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -11.335157, 0.5215468, -12.288195)
 
-[node name="EnemyBasic" parent="." instance=ExtResource("13_e07wo")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.579782, 1.374999, -2.4969091)
-
-[node name="EnemyBasic2" parent="." instance=ExtResource("13_e07wo")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.737186, 1.375001, 0.7713743)
-
-[node name="EnemyBasic3" parent="." instance=ExtResource("13_e07wo")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.980476, 1.375, 3.9984217)
+[node name="ZombieSoldier" parent="." instance=ExtResource("13_e07wo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.152277, 1.4717798, -8.951346)
+player_path = NodePath("../Player")

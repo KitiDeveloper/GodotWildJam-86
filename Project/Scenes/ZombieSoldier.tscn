@@ -1,0 +1,699 @@
+[gd_scene load_steps=143 format=3 uid="uid://b2c8knibkoso"]
+
+[ext_resource type="Script" uid="uid://bneqrqa6r7oxu" path="res://Scripts/zombie_soldier.gd" id="1_lenvn"]
+[ext_resource type="Texture2D" uid="uid://d1cg8olpeifs4" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/03East/03East0001.png" id="1_tjdor"]
+[ext_resource type="Texture2D" uid="uid://7jv7sbop6dau" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/03East/03East0002.png" id="2_wag2v"]
+[ext_resource type="Texture2D" uid="uid://cvmigo6gs3orx" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/03East/03East0003.png" id="3_40wow"]
+[ext_resource type="Texture2D" uid="uid://chcblj6epfv4d" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/03East/03East0004.png" id="4_n6o0r"]
+[ext_resource type="Texture2D" uid="uid://b4d1q0yhhp75p" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/03East/03East0005.png" id="5_s0m31"]
+[ext_resource type="Texture2D" uid="uid://dgddns15n2hj6" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/03East/03East0006.png" id="6_ei2wr"]
+[ext_resource type="Texture2D" uid="uid://cwwgennho1ovo" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/03East/03East0007.png" id="7_lenvn"]
+[ext_resource type="Texture2D" uid="uid://g04bmwejak18" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/03East/03East0008.png" id="8_hm1h6"]
+[ext_resource type="Texture2D" uid="uid://dsnewvfyd3l7t" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/03East/03East0009.png" id="9_wss41"]
+[ext_resource type="Texture2D" uid="uid://b6aw11mx32e4q" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/03East/03East0010.png" id="10_s4sa3"]
+[ext_resource type="Texture2D" uid="uid://br68e6rxpuob7" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/03East/03East0011.png" id="11_x3lk6"]
+[ext_resource type="Texture2D" uid="uid://5lcl2d4pm2wh" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/01North/01North0001.png" id="12_ei2wr"]
+[ext_resource type="Texture2D" uid="uid://b5icysg56fqvl" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/01North/01North0002.png" id="13_lenvn"]
+[ext_resource type="Texture2D" uid="uid://cwtxwt5rf6s6q" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/01North/01North0003.png" id="14_hm1h6"]
+[ext_resource type="Texture2D" uid="uid://xah75w34enwf" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/01North/01North0004.png" id="15_wss41"]
+[ext_resource type="Texture2D" uid="uid://ckopsrr81rji8" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/01North/01North0005.png" id="16_s4sa3"]
+[ext_resource type="Texture2D" uid="uid://nnn7g2vmdt0i" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/01North/01North0006.png" id="17_x3lk6"]
+[ext_resource type="Texture2D" uid="uid://dx7dexygtr5by" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/01North/01North0007.png" id="18_p7ayx"]
+[ext_resource type="Texture2D" uid="uid://gx1pf8iu5b7o" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/01North/01North0008.png" id="19_ij5ov"]
+[ext_resource type="Texture2D" uid="uid://drkpql7ais5js" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/01North/01North0009.png" id="20_5dr5o"]
+[ext_resource type="Texture2D" uid="uid://dwma1fy2sdyai" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/01North/01North0010.png" id="21_plob0"]
+[ext_resource type="Texture2D" uid="uid://bolexuga85p12" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/01North/01North0011.png" id="22_j0aen"]
+[ext_resource type="Texture2D" uid="uid://di47ek6ixy5bv" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/02NorthEast/02NorthEast0001.png" id="23_llbgs"]
+[ext_resource type="Texture2D" uid="uid://nuojypp4vxux" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/02NorthEast/02NorthEast0002.png" id="24_388ff"]
+[ext_resource type="Texture2D" uid="uid://camjpcwjxg60b" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/02NorthEast/02NorthEast0003.png" id="25_1fejp"]
+[ext_resource type="Texture2D" uid="uid://dofoinrbfrwkx" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/02NorthEast/02NorthEast0004.png" id="26_oynca"]
+[ext_resource type="Texture2D" uid="uid://bwj54w00kcjn" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/02NorthEast/02NorthEast0005.png" id="27_mcgps"]
+[ext_resource type="Texture2D" uid="uid://b8dww337t37t2" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/02NorthEast/02NorthEast0006.png" id="28_rnvc2"]
+[ext_resource type="Texture2D" uid="uid://dgtiic5un1il" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/02NorthEast/02NorthEast0007.png" id="29_h1wp1"]
+[ext_resource type="Texture2D" uid="uid://cph0s31fkaxcg" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/02NorthEast/02NorthEast0008.png" id="30_3hmuc"]
+[ext_resource type="Texture2D" uid="uid://csk6mia3fd2av" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/02NorthEast/02NorthEast0009.png" id="31_rembo"]
+[ext_resource type="Texture2D" uid="uid://cb2mldapxptte" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/02NorthEast/02NorthEast0010.png" id="32_q7nf2"]
+[ext_resource type="Texture2D" uid="uid://dogjdi5chy3a6" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/02NorthEast/02NorthEast0011.png" id="33_vd4u2"]
+[ext_resource type="Texture2D" uid="uid://cx8hok83ae1ps" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/08NorthWest/08NorthWest0001.png" id="34_lxk06"]
+[ext_resource type="Texture2D" uid="uid://cr8wnm67jpakw" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/08NorthWest/08NorthWest0002.png" id="35_qg3kj"]
+[ext_resource type="Texture2D" uid="uid://byeulah2u6bhm" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/08NorthWest/08NorthWest0003.png" id="36_b3wng"]
+[ext_resource type="Texture2D" uid="uid://d0e454e28nexf" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/08NorthWest/08NorthWest0004.png" id="37_hkufs"]
+[ext_resource type="Texture2D" uid="uid://dsuslnb3us3ld" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/08NorthWest/08NorthWest0005.png" id="38_0pqbf"]
+[ext_resource type="Texture2D" uid="uid://div654vhdkffc" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/08NorthWest/08NorthWest0006.png" id="39_81j8y"]
+[ext_resource type="Texture2D" uid="uid://bnbsutbdr1ou4" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/08NorthWest/08NorthWest0007.png" id="40_xo7ak"]
+[ext_resource type="Texture2D" uid="uid://ipacrf06vx2n" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/08NorthWest/08NorthWest0008.png" id="41_a4b72"]
+[ext_resource type="Texture2D" uid="uid://bxfrr04sr2kdc" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/08NorthWest/08NorthWest0009.png" id="42_6ex0n"]
+[ext_resource type="Texture2D" uid="uid://ctydioi5l5uln" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/08NorthWest/08NorthWest0010.png" id="43_tdpvq"]
+[ext_resource type="Texture2D" uid="uid://dosuk1nsc0icn" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/08NorthWest/08NorthWest0011.png" id="44_hat07"]
+[ext_resource type="Texture2D" uid="uid://diaeqfcuvnevd" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/05South/05South0001.png" id="45_q4vi0"]
+[ext_resource type="Texture2D" uid="uid://csjmqtu4twe45" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/05South/05South0002.png" id="46_wgffc"]
+[ext_resource type="Texture2D" uid="uid://b8e5f3mbqpvjt" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/05South/05South0003.png" id="47_wibon"]
+[ext_resource type="Texture2D" uid="uid://dhwf0y61guetf" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/05South/05South0004.png" id="48_ioh5h"]
+[ext_resource type="Texture2D" uid="uid://t18b2omk5ih0" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/05South/05South0005.png" id="49_wwx4u"]
+[ext_resource type="Texture2D" uid="uid://bcck8fy2cn0uv" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/05South/05South0006.png" id="50_hyr5j"]
+[ext_resource type="Texture2D" uid="uid://suf424o2joov" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/05South/05South0007.png" id="51_585fr"]
+[ext_resource type="Texture2D" uid="uid://c5rbq2eho2uv7" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/05South/05South0008.png" id="52_br3pe"]
+[ext_resource type="Texture2D" uid="uid://p3rl2xlklk76" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/05South/05South0009.png" id="53_iv2qm"]
+[ext_resource type="Texture2D" uid="uid://bbs0opa3pkqdf" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/05South/05South0010.png" id="54_v0tvm"]
+[ext_resource type="Texture2D" uid="uid://c8g7vlj8ke0bs" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/05South/05South0011.png" id="55_lvm6m"]
+[ext_resource type="Texture2D" uid="uid://bbl7tkapi2to" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/04SouthEast/04SouthEast0001.png" id="56_fb0xx"]
+[ext_resource type="Texture2D" uid="uid://2o8sfd6ahush" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/04SouthEast/04SouthEast0002.png" id="57_jxf6o"]
+[ext_resource type="Texture2D" uid="uid://cscno3ed0pyc7" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/04SouthEast/04SouthEast0003.png" id="58_wsqhn"]
+[ext_resource type="Texture2D" uid="uid://deekogq7w4uhi" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/04SouthEast/04SouthEast0004.png" id="59_1xjdf"]
+[ext_resource type="Texture2D" uid="uid://vvt3upuqkwa2" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/04SouthEast/04SouthEast0005.png" id="60_u1eo5"]
+[ext_resource type="Texture2D" uid="uid://d32du5lrpenha" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/04SouthEast/04SouthEast0006.png" id="61_rkujr"]
+[ext_resource type="Texture2D" uid="uid://8vej0sy58q1g" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/04SouthEast/04SouthEast0007.png" id="62_krcld"]
+[ext_resource type="Texture2D" uid="uid://c83giryrtaw0x" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/04SouthEast/04SouthEast0008.png" id="63_trglv"]
+[ext_resource type="Texture2D" uid="uid://s8wclo5bvyu4" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/04SouthEast/04SouthEast0009.png" id="64_sxmt2"]
+[ext_resource type="Texture2D" uid="uid://cwfksmucg845d" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/04SouthEast/04SouthEast0010.png" id="65_p67bk"]
+[ext_resource type="Texture2D" uid="uid://bxywld28ot3m2" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/04SouthEast/04SouthEast0011.png" id="66_fbf88"]
+[ext_resource type="Texture2D" uid="uid://umeg6aqb8cnd" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/06SouthWest/06SouthWest0001.png" id="67_icvrg"]
+[ext_resource type="Texture2D" uid="uid://dn5p472erqwyw" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/06SouthWest/06SouthWest0002.png" id="68_mqdvx"]
+[ext_resource type="Texture2D" uid="uid://cjkh8lftriede" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/06SouthWest/06SouthWest0003.png" id="69_qniot"]
+[ext_resource type="Texture2D" uid="uid://bgruw5c0t6l6f" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/06SouthWest/06SouthWest0004.png" id="70_42fd0"]
+[ext_resource type="Texture2D" uid="uid://owhicch1q8te" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/06SouthWest/06SouthWest0005.png" id="71_re5od"]
+[ext_resource type="Texture2D" uid="uid://bnav21k2hei06" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/06SouthWest/06SouthWest0006.png" id="72_0up1r"]
+[ext_resource type="Texture2D" uid="uid://druq7wjyahhua" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/06SouthWest/06SouthWest0007.png" id="73_tqdbm"]
+[ext_resource type="Texture2D" uid="uid://c23ij6fai7fbx" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/06SouthWest/06SouthWest0008.png" id="74_ij13x"]
+[ext_resource type="Texture2D" uid="uid://c8jsx4oitedfn" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/06SouthWest/06SouthWest0009.png" id="75_fx6dg"]
+[ext_resource type="Texture2D" uid="uid://bbr45intvnjiu" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/06SouthWest/06SouthWest0010.png" id="76_fixrc"]
+[ext_resource type="Texture2D" uid="uid://d5thye5jveds" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/06SouthWest/06SouthWest0011.png" id="77_4viij"]
+[ext_resource type="Texture2D" uid="uid://cvy20fwvr1oe6" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/07West/07West0001.png" id="78_ke63u"]
+[ext_resource type="Texture2D" uid="uid://djpesdd5xl0be" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/07West/07West0002.png" id="79_eh33k"]
+[ext_resource type="Texture2D" uid="uid://bpdjikfcubxgh" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/07West/07West0003.png" id="80_r6mrn"]
+[ext_resource type="Texture2D" uid="uid://chwkt374hfiqd" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/07West/07West0004.png" id="81_hu5ky"]
+[ext_resource type="Texture2D" uid="uid://dn7117s0pv8u" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/07West/07West0005.png" id="82_hr87j"]
+[ext_resource type="Texture2D" uid="uid://c2bpmuen8r4qy" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/07West/07West0006.png" id="83_apnlx"]
+[ext_resource type="Texture2D" uid="uid://w8tlvxqdqdsa" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/07West/07West0007.png" id="84_qx0cq"]
+[ext_resource type="Texture2D" uid="uid://b5r01qcrvj14p" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/07West/07West0008.png" id="85_771e6"]
+[ext_resource type="Texture2D" uid="uid://mcgk8qoxhmyg" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/07West/07West0009.png" id="86_1f5u0"]
+[ext_resource type="Texture2D" uid="uid://b8268h6npe0a0" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/07West/07West0010.png" id="87_gsy8s"]
+[ext_resource type="Texture2D" uid="uid://b62cbvf4bc1uk" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierAttack/07West/07West0011.png" id="88_wxnsl"]
+[ext_resource type="Texture2D" uid="uid://ryk6c7jx1bw8" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/03East/03East0001.png" id="89_ntpiw"]
+[ext_resource type="Texture2D" uid="uid://cw3svosrxvs5k" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/03East/03East0002.png" id="90_5t18o"]
+[ext_resource type="Texture2D" uid="uid://dsvxr1pe124l1" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/03East/03East0003.png" id="91_4548v"]
+[ext_resource type="Texture2D" uid="uid://cjo4i7uaxuj72" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/03East/03East0004.png" id="92_xh1dp"]
+[ext_resource type="Texture2D" uid="uid://ces6ipa7aycy2" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/03East/03East0005.png" id="93_6ndau"]
+[ext_resource type="Texture2D" uid="uid://wbfdt7y21277" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/03East/03East0006.png" id="94_buka0"]
+[ext_resource type="Texture2D" uid="uid://g1wdmr88e1eh" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/01North/01North0001.png" id="95_iy0jb"]
+[ext_resource type="Texture2D" uid="uid://dbpvkkdje6ypu" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/01North/01North0002.png" id="96_hfhnc"]
+[ext_resource type="Texture2D" uid="uid://c6nmkpcij5sq2" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/01North/01North0003.png" id="97_xetag"]
+[ext_resource type="Texture2D" uid="uid://hxlt5gg3720j" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/01North/01North0004.png" id="98_ypvjx"]
+[ext_resource type="Texture2D" uid="uid://b2odd0md42vgg" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/01North/01North0005.png" id="99_rogcw"]
+[ext_resource type="Texture2D" uid="uid://dn1v832uii54p" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/01North/01North0006.png" id="100_jdbg5"]
+[ext_resource type="Texture2D" uid="uid://dlef7c83q7rry" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/02NorthEast/02NorthEast0001.png" id="101_vamxe"]
+[ext_resource type="Texture2D" uid="uid://0n5l24544g81" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/02NorthEast/02NorthEast0002.png" id="102_qw6op"]
+[ext_resource type="Texture2D" uid="uid://xui6bpbpnu5p" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/02NorthEast/02NorthEast0003.png" id="103_nhqfm"]
+[ext_resource type="Texture2D" uid="uid://biffu6ylrl3h7" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/02NorthEast/02NorthEast0004.png" id="104_q7ocv"]
+[ext_resource type="Texture2D" uid="uid://brh676djqunkj" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/02NorthEast/02NorthEast0005.png" id="105_ymqak"]
+[ext_resource type="Texture2D" uid="uid://b3buqo88ykl0t" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/02NorthEast/02NorthEast0006.png" id="106_4ojb6"]
+[ext_resource type="Texture2D" uid="uid://dssuiy1v5mre6" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/08NorthWest/08NorthWest0001.png" id="107_i2csq"]
+[ext_resource type="Texture2D" uid="uid://kxclorqd2gks" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/08NorthWest/08NorthWest0002.png" id="108_c7oy8"]
+[ext_resource type="Texture2D" uid="uid://e5jdkib31nss" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/08NorthWest/08NorthWest0003.png" id="109_btvuh"]
+[ext_resource type="Texture2D" uid="uid://vsh2wr6rou65" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/08NorthWest/08NorthWest0004.png" id="110_ciogf"]
+[ext_resource type="Texture2D" uid="uid://by01h3h7qjd7y" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/08NorthWest/08NorthWest0005.png" id="111_rrt12"]
+[ext_resource type="Texture2D" uid="uid://com1wroxulj13" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/08NorthWest/08NorthWest0006.png" id="112_3p21h"]
+[ext_resource type="Texture2D" uid="uid://b6xxnwrqihdey" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/05South/05South0001.png" id="113_ec0a6"]
+[ext_resource type="Texture2D" uid="uid://hxv18or0ls80" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/05South/05South0002.png" id="114_yesrr"]
+[ext_resource type="Texture2D" uid="uid://be2pxxfmg4iox" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/05South/05South0003.png" id="115_tniw4"]
+[ext_resource type="Texture2D" uid="uid://gc72bripa88e" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/05South/05South0004.png" id="116_4s5pr"]
+[ext_resource type="Texture2D" uid="uid://dcmlaeitlu7q7" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/05South/05South0005.png" id="117_0of6f"]
+[ext_resource type="Texture2D" uid="uid://dg3mkhm43ekin" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/05South/05South0006.png" id="118_hn3n4"]
+[ext_resource type="Texture2D" uid="uid://b55n3eepp4kc" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/04SouthEast/04SouthEast0001.png" id="119_wuy4i"]
+[ext_resource type="Texture2D" uid="uid://c1m3yyb3ro1wn" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/04SouthEast/04SouthEast0002.png" id="120_tpjn8"]
+[ext_resource type="Texture2D" uid="uid://c3e57gnyeqrdd" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/04SouthEast/04SouthEast0003.png" id="121_actg6"]
+[ext_resource type="Texture2D" uid="uid://oo5krtnhdsr" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/04SouthEast/04SouthEast0004.png" id="122_2kqyx"]
+[ext_resource type="Texture2D" uid="uid://dhg2jqbsbkeoy" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/04SouthEast/04SouthEast0005.png" id="123_cncgs"]
+[ext_resource type="Texture2D" uid="uid://be05bpvbqvwah" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/04SouthEast/04SouthEast0006.png" id="124_8rp83"]
+[ext_resource type="Texture2D" uid="uid://wudakufvtyrr" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/06SouthWest/06SouthWest0001.png" id="125_05sxq"]
+[ext_resource type="Texture2D" uid="uid://gowql3kdo4kq" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/06SouthWest/06SouthWest0002.png" id="126_8138f"]
+[ext_resource type="Texture2D" uid="uid://bfu8snanxtqrx" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/06SouthWest/06SouthWest0003.png" id="127_l4l7w"]
+[ext_resource type="Texture2D" uid="uid://bi8umfbk7p7vb" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/06SouthWest/06SouthWest0004.png" id="128_v5swp"]
+[ext_resource type="Texture2D" uid="uid://d3c25ioikjj30" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/06SouthWest/06SouthWest0005.png" id="129_4y63v"]
+[ext_resource type="Texture2D" uid="uid://b8fyb1jobigot" path="res://Textures/CharacterShadowBlackHalf.png" id="130_a4vi5"]
+[ext_resource type="Texture2D" uid="uid://cvijb5a7vt2e0" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/06SouthWest/06SouthWest0006.png" id="130_nix0q"]
+[ext_resource type="Texture2D" uid="uid://b50yis1iop0gj" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/07West/07West0001.png" id="131_4sh7t"]
+[ext_resource type="Texture2D" uid="uid://cxfv08wptakbi" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/07West/07West0002.png" id="132_mg7to"]
+[ext_resource type="Texture2D" uid="uid://bfhltor4pg5rt" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/07West/07West0003.png" id="133_v5e3y"]
+[ext_resource type="Texture2D" uid="uid://dvfprrti41ike" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/07West/07West0004.png" id="134_klwp2"]
+[ext_resource type="Texture2D" uid="uid://dj08i7vwls5in" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/07West/07West0005.png" id="135_bbr6e"]
+[ext_resource type="Texture2D" uid="uid://dfg3rj1qc3wd3" path="res://SpriteAnimations/ZombieSoldier/ZombieSoldierWalking/07West/07West0006.png" id="136_gb53p"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_qbkls"]
+radius = 0.3
+height = 1.8
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_rpqav"]
+radius = 0.4
+height = 1.8
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_qbkls"]
+top_radius = 0.2
+bottom_radius = 0.2
+height = 1.5
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lslt6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_tjdor")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wag2v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_40wow")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_n6o0r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_s0m31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ei2wr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_lenvn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_hm1h6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_wss41")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_s4sa3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_x3lk6")
+}],
+"loop": false,
+"name": &"Attack_E",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_ei2wr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_lenvn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_hm1h6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_wss41")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_s4sa3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_x3lk6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_p7ayx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_ij5ov")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_5dr5o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_plob0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_j0aen")
+}],
+"loop": false,
+"name": &"Attack_N",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_llbgs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_388ff")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_1fejp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_oynca")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_mcgps")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_rnvc2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_h1wp1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_3hmuc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_rembo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_q7nf2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_vd4u2")
+}],
+"loop": false,
+"name": &"Attack_NE",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("34_lxk06")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_qg3kj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_b3wng")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_hkufs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_0pqbf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_81j8y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_xo7ak")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_a4b72")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_6ex0n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_tdpvq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_hat07")
+}],
+"loop": false,
+"name": &"Attack_NW",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("45_q4vi0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_wgffc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_wibon")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_ioh5h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_wwx4u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_hyr5j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_585fr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_br3pe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_iv2qm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_v0tvm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_lvm6m")
+}],
+"loop": false,
+"name": &"Attack_S",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("56_fb0xx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_jxf6o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_wsqhn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_1xjdf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_u1eo5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_rkujr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_krcld")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_trglv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_sxmt2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_p67bk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_fbf88")
+}],
+"loop": false,
+"name": &"Attack_SE",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("67_icvrg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_mqdvx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_qniot")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_42fd0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_re5od")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_0up1r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_tqdbm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_ij13x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_fx6dg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_fixrc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_4viij")
+}],
+"loop": false,
+"name": &"Attack_SW",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("78_ke63u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_eh33k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_r6mrn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_hu5ky")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_hr87j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_apnlx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_qx0cq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_771e6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_1f5u0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_gsy8s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_wxnsl")
+}],
+"loop": false,
+"name": &"Attack_W",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("89_ntpiw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_5t18o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_4548v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_xh1dp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_6ndau")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_buka0")
+}],
+"loop": true,
+"name": &"Walk_E",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("95_iy0jb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_hfhnc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_xetag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_ypvjx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_rogcw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_jdbg5")
+}],
+"loop": true,
+"name": &"Walk_N",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("101_vamxe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_qw6op")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_nhqfm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_q7ocv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_ymqak")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_4ojb6")
+}],
+"loop": true,
+"name": &"Walk_NE",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("107_i2csq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_c7oy8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_btvuh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_ciogf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_rrt12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_3p21h")
+}],
+"loop": true,
+"name": &"Walk_NW",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("113_ec0a6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114_yesrr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_tniw4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116_4s5pr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_0of6f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118_hn3n4")
+}],
+"loop": true,
+"name": &"Walk_S",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("119_wuy4i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_tpjn8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_actg6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_2kqyx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_cncgs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_8rp83")
+}],
+"loop": true,
+"name": &"Walk_SE",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("125_05sxq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126_8138f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127_l4l7w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128_v5swp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129_4y63v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("130_nix0q")
+}],
+"loop": true,
+"name": &"Walk_SW",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("131_4sh7t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("132_mg7to")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133_v5e3y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("134_klwp2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135_bbr6e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("136_gb53p")
+}],
+"loop": true,
+"name": &"Walk_W",
+"speed": 5.0
+}]
+
+[node name="ZombieSoldier" type="CharacterBody3D" groups=["enemies"]]
+collision_layer = 4
+collision_mask = 3
+script = ExtResource("1_lenvn")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_qbkls")
+
+[node name="DummyVisual" type="MeshInstance3D" parent="."]
+visible = false
+cast_shadow = 0
+mesh = SubResource("CapsuleMesh_rpqav")
+
+[node name="Facing" type="MeshInstance3D" parent="DummyVisual"]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.32791698, -0.4835313)
+cast_shadow = 0
+mesh = SubResource("CylinderMesh_qbkls")
+skeleton = NodePath("../..")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 1.5673869, 1.2422955, 0, -1.2422955, 1.5673869, 0, 0, 0)
+layers = 4
+shaded = true
+alpha_cut = 1
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_lslt6")
+animation = &"Walk_W"
+speed_scale = 1.5
+
+[node name="FakeShadow" type="Node3D" parent="."]
+
+[node name="Sprite3D" type="Sprite3D" parent="FakeShadow"]
+transform = Transform3D(6, 0, 0, 0, -2.6226832e-07, 6, 0, -6, -2.6226832e-07, 0, -0.8415153, 0)
+texture_filter = 0
+texture = ExtResource("130_a4vi5")
+
+[node name="Sprite3D3" type="Sprite3D" parent="FakeShadow/Sprite3D"]
+transform = Transform3D(0.8333334, 0, 0, 0, -0.8333334, 7.2852316e-08, 0, -7.2852316e-08, -0.8333334, 0, 3.5318415e-12, -8.0779195e-05)
+texture_filter = 0
+texture = ExtResource("130_a4vi5")
+
+[node name="Sprite3D2" type="Sprite3D" parent="FakeShadow/Sprite3D"]
+transform = Transform3D(0.6666667, 0, 0, 0, 0.6666667, 1.7763568e-15, 0, -1.7763568e-15, 0.6666667, 0, 0, 0)
+texture_filter = 0
+texture = ExtResource("130_a4vi5")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." groups=["enemies"]]
+simplify_path = true
+avoidance_enabled = true
+height = 1.75
+radius = 0.4
+neighbor_distance = 1.0
+avoidance_layers = 15
+avoidance_mask = 15
